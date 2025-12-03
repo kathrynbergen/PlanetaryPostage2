@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-//BRANCH TESTING!!
 
 public class Chuck : MonoBehaviour
 {
