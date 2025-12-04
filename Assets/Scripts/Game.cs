@@ -7,9 +7,12 @@ public class Game : MonoBehaviour
     public AsteroidPlacer AsteroidPlacer;
     public AlienBasicPlacer AlienBasicPlacer;
     public  AlienShooterPlacer AlienShooterPlacer;
+    public bool IsPlaying = false;
+    
     public void Start()
     {
         // disable player movement
+        //From cole: I think this is resolved? Lmk
         DisableObstacles();
     }
     public void OnStartLevelOneButtonClicked()
@@ -49,7 +52,12 @@ public class Game : MonoBehaviour
         UI.StartGame();
         UpdateSpawnRates();
         EnableObstacles();
-        // enable player movement
+        EnablePlayerMovement();
+    }
+
+    private void EnablePlayerMovement()
+    {
+        IsPlaying = true;
     }
 
     private void UpdateSpawnRates()

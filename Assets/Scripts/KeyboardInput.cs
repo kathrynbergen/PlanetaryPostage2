@@ -71,11 +71,11 @@ public class KeyboardInput : MonoBehaviour
        //Movement
        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.R))
        {
-           Chuck.Move(new Vector2(0, 1));
+           Chuck.MoveManually(new Vector2(0, 1));
        }
        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.F))
        {
-           Chuck.Move(new Vector2(0, -1));
+           Chuck.MoveManually(new Vector2(0, -1));
        }
       
       

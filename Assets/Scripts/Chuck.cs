@@ -4,41 +4,52 @@ using System.Collections;
 public class Chuck : MonoBehaviour
 {
    public SpriteRenderer ChuckSpriteRenderer;
+   
    public Sprite NormalSprite;
    public Sprite ParrySprite;
    public Sprite BoostSprite;
    public Sprite PulseSprite;
    public Sprite ShootSprite;
-
-
-   //All instances of 5f will be DEFAULT MOVE SPEED, UPDATE IN GAMEPARAMETERS!!!!!!!!!!!!!!!!!!!!
-   private float ChuckMoveSpeed = 5f;
+   
+   public Game Game;
+   
+   private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
   
-   //Player States
    private bool isParrying = false;
    private bool isBoosting = false;
    private bool isPulsing = false;
    private bool isShooting = false;
-  
-   //State Access
+   
    private bool canParry = true;
    private bool canBoost = true;
   
+   
+   //MOVEMENT
    public void Move(Vector2 direction)
    {
-       //CHANGE TO GAMEPARAMETERS.CHUCKMOVESPEED
-       float yAmount = direction.y * ChuckMoveSpeed * Time.deltaTime;
+       float yAmount = direction.y * ChuckSpeed * Time.deltaTime;
       
        ChuckSpriteRenderer.transform.Translate(0, yAmount, 0f);
        ChuckSpriteRenderer.transform.position = SpriteTools.ConstrainToScreen(ChuckSpriteRenderer);
    }
+   
+   public void MoveManually(Vector2 direction)
+   {
+       if (!Game.IsPlaying)
+       {
+           return;
+       }
+       Move(direction);
+   }
 
-
+   //PACKAGE LAUNCH 
+   
+   //!!!
+   //UNFINISHED
    public void Shoot()
    {
        //StartCoroutine(MoveToLaunchPos());
    }
-
 
    IEnumerator MoveToLaunchPos()
    {
@@ -46,9 +57,10 @@ public class Chuck : MonoBehaviour
    }
 
 
+   //PULSING
    public void Pulse()
    {
-       if (!isBoosting && !isPulsing && !isShooting && !isParrying)
+       if (!isBoosting && !isPulsing && !isShooting && !isParrying && Game.IsPlaying)
        {
            Debug.Log("PULSE");
            ChangeToPulseSprite();
@@ -59,17 +71,16 @@ public class Chuck : MonoBehaviour
 
    IEnumerator PulseTimer()
    {
-       //change to gameparameters.chuckpulsespeed
        isPulsing = true;
-       ChuckMoveSpeed = 15f;
-       yield return new WaitForSeconds(0.2f);
+       ChuckSpeed = GameParameters.ChuckPulseSpeed;
+       yield return new WaitForSeconds(GameParameters.ChuckPulseDuration);
        ReturnToNormal();
    }
-
-
+   
+   //PARRYING
    public void Parry()
    {
-       if (canParry)
+       if (canParry && Game.IsPlaying)
        {
            ChangeToParrySprite();
            isParrying = true;
@@ -82,43 +93,46 @@ public class Chuck : MonoBehaviour
 
    IEnumerator ParryTimer()
    {
-       //CHNGE TO GAMEPARAMETERS.PARRYTIME
-       ChuckMoveSpeed = 2f;
-       yield return new WaitForSeconds(0.5f);
+       ChuckSpeed = GameParameters.ChuckParrySpeed;
+       yield return new WaitForSeconds(GameParameters.ChuckParryDuration);
        ReturnFromParry();
    }
-  
+
+   IEnumerator ParryCooldown()
+   {
+       Debug.Log("Cooldown Start");
+       yield return new WaitForSeconds(GameParameters.ChuckParryCooldown);
+       canParry = true;
+       Debug.Log("Cooldown Over");
+   }
+   
+   public bool getIsParrying()
+   {
+       return isParrying;
+   }
+   
    private void ReturnFromParry()
    {
        ChangeToNormalSprite();
-       ChuckMoveSpeed = 5f;
+       ChuckSpeed = GameParameters.ChuckMoveSpeed;
        canBoost = true;
        isParrying = false;
        canParry = false;
        StartCoroutine(ParryCooldown());
    }
   
-   IEnumerator ParryCooldown()
-   {
-       //CHNGE TO GAMEPARAMETERS.PARRYCOOLDOWN
-       Debug.Log("Cooldown Start");
-       yield return new WaitForSeconds(5f);
-       canParry = true;
-       Debug.Log("Cooldown Over");
-   }
-  
+   //CHANGING STATES
    private void ReturnToNormal()
    {
        Debug.Log("Returning to Normal");
-       ChuckMoveSpeed = 5f;
+       ChuckSpeed = GameParameters.ChuckMoveSpeed;
        isPulsing = false;
        isParrying = false;
        isBoosting = false;
        isShooting = false;
        ChangeToNormalSprite();
    }
-
-
+   
    private void ChangeToParrySprite()
    {
        ChuckSpriteRenderer.sprite = ParrySprite;
@@ -139,18 +153,20 @@ public class Chuck : MonoBehaviour
    {
        ChuckSpriteRenderer.sprite = PulseSprite;
    }
-
-
+   
    private void ChangeToShootSprite()
    {
        ChuckSpriteRenderer.sprite = ShootSprite;
    }
 
 
+   //BOOSTING
+   
+   //!!!
    //Player can boost while boosting, but shouldn't be an issue when we set boost conditions
    public void Boost()
    {
-       if (canBoost)
+       if (canBoost && Game.IsPlaying)
        {
            ChangeToBoostSprite();
            Debug.Log("BOOSTING!");
@@ -161,17 +177,10 @@ public class Chuck : MonoBehaviour
   
    IEnumerator BoostTimer()
    {
-       //CHNGE TO GAMEPARAMETERS.BOOSTTIME
        canParry = false;
-       ChuckMoveSpeed = 1.5f;
-       yield return new WaitForSeconds(5f);
+       ChuckSpeed = GameParameters.ChuckBoostSpeed;
+       yield return new WaitForSeconds(GameParameters.ChuckBoostDuration);
        canParry = true;
        ReturnToNormal();
-   }
-
-
-   public bool getIsParrying()
-   {
-       return isParrying;
    }
 }
