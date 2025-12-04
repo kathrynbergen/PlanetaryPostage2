@@ -12,9 +12,10 @@ public class Chuck : MonoBehaviour
    public Sprite ShootSprite;
    
    public Game Game;
+   public HealthDisplay HealthBar;
    
    private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
-   private float Health = GameParameters.ChuckHealth;
+   
   
    private bool isParrying = false;
    private bool isBoosting = false;
@@ -198,6 +199,7 @@ public class Chuck : MonoBehaviour
            }
            else
            {
+               Debug.Log("OUCH!");
                TakeDamage();
            }
        }
@@ -205,6 +207,7 @@ public class Chuck : MonoBehaviour
 
    public void TakeDamage()
    {
-       Health--;
+       HealthBar.DecreaseHealth();
+       //HealthBar.CheckIfDead(gameObject);
    }
 }
