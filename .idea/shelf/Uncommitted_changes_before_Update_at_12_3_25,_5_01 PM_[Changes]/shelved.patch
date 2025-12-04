@@ -1,0 +1,2818 @@
+Index: Assets/ParryPlaceholder.png.meta
+===================================================================
+diff --git a/Assets/ParryPlaceholder.png.meta b/Assets/ParryPlaceholder.png.meta
+deleted file mode 100644
+--- a/Assets/ParryPlaceholder.png.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,143 +0,0 @@
+-fileFormatVersion: 2
+-guid: 7786ec7f7aa0e614e84cd44a96493115
+-TextureImporter:
+-  internalIDToNameTable:
+-  - first:
+-      213: 7060505852288999708
+-    second: ParryPlaceholder_0
+-  externalObjects: {}
+-  serializedVersion: 13
+-  mipmaps:
+-    mipMapMode: 0
+-    enableMipMap: 0
+-    sRGBTexture: 1
+-    linearTexture: 0
+-    fadeOut: 0
+-    borderMipMap: 0
+-    mipMapsPreserveCoverage: 0
+-    alphaTestReferenceValue: 0.5
+-    mipMapFadeDistanceStart: 1
+-    mipMapFadeDistanceEnd: 3
+-  bumpmap:
+-    convertToNormalMap: 0
+-    externalNormalMap: 0
+-    heightScale: 0.25
+-    normalMapFilter: 0
+-    flipGreenChannel: 0
+-  isReadable: 0
+-  streamingMipmaps: 0
+-  streamingMipmapsPriority: 0
+-  vTOnly: 0
+-  ignoreMipmapLimit: 0
+-  grayScaleToAlpha: 0
+-  generateCubemap: 6
+-  cubemapConvolution: 0
+-  seamlessCubemap: 0
+-  textureFormat: 1
+-  maxTextureSize: 2048
+-  textureSettings:
+-    serializedVersion: 2
+-    filterMode: 1
+-    aniso: 1
+-    mipBias: 0
+-    wrapU: 1
+-    wrapV: 1
+-    wrapW: 1
+-  nPOTScale: 0
+-  lightmap: 0
+-  compressionQuality: 50
+-  spriteMode: 2
+-  spriteExtrude: 1
+-  spriteMeshType: 1
+-  alignment: 0
+-  spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+-  spriteGenerateFallbackPhysicsShape: 1
+-  alphaUsage: 1
+-  alphaIsTransparency: 1
+-  spriteTessellationDetail: -1
+-  textureType: 8
+-  textureShape: 1
+-  singleChannelComponent: 0
+-  flipbookRows: 1
+-  flipbookColumns: 1
+-  maxTextureSizeSet: 0
+-  compressionQualitySet: 0
+-  textureFormatSet: 0
+-  ignorePngGamma: 0
+-  applyGammaDecoding: 0
+-  swizzle: 50462976
+-  cookieLightType: 0
+-  platformSettings:
+-  - serializedVersion: 4
+-    buildTarget: DefaultTexturePlatform
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 4
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  spriteSheet:
+-    serializedVersion: 2
+-    sprites:
+-    - serializedVersion: 2
+-      name: ParryPlaceholder_0
+-      rect:
+-        serializedVersion: 2
+-        x: 0
+-        y: 0
+-        width: 600
+-        height: 642
+-      alignment: 0
+-      pivot: {x: 0, y: 0}
+-      border: {x: 0, y: 0, z: 0, w: 0}
+-      customData: 
+-      outline: []
+-      physicsShape: []
+-      tessellationDetail: -1
+-      bones: []
+-      spriteID: c11a04c1aa4fbf160800000000000000
+-      internalID: 7060505852288999708
+-      vertices: []
+-      indices: 
+-      edges: []
+-      weights: []
+-    outline: []
+-    customData: 
+-    physicsShape: []
+-    bones: []
+-    spriteID: 
+-    internalID: 0
+-    vertices: []
+-    indices: 
+-    edges: []
+-    weights: []
+-    secondaryTextures: []
+-    spriteCustomMetadata:
+-      entries: []
+-    nameFileIdTable:
+-      ParryPlaceholder_0: 7060505852288999708
+-  mipmapLimitGroupName: 
+-  pSDRemoveMatte: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/InputSystem_Actions.inputactions
+===================================================================
+diff --git a/Assets/InputSystem_Actions.inputactions b/Assets/InputSystem_Actions.inputactions
+deleted file mode 100644
+--- a/Assets/InputSystem_Actions.inputactions	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,1057 +0,0 @@
+-{
+-    "name": "InputSystem_Actions",
+-    "maps": [
+-        {
+-            "name": "Player",
+-            "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
+-            "actions": [
+-                {
+-                    "name": "Move",
+-                    "type": "Value",
+-                    "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
+-                    "expectedControlType": "Vector2",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": true
+-                },
+-                {
+-                    "name": "Look",
+-                    "type": "Value",
+-                    "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
+-                    "expectedControlType": "Vector2",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": true
+-                },
+-                {
+-                    "name": "Attack",
+-                    "type": "Button",
+-                    "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Interact",
+-                    "type": "Button",
+-                    "id": "852140f2-7766-474d-8707-702459ba45f3",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "Hold",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Crouch",
+-                    "type": "Button",
+-                    "id": "27c5f898-bc57-4ee1-8800-db469aca5fe3",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Jump",
+-                    "type": "Button",
+-                    "id": "f1ba0d36-48eb-4cd5-b651-1c94a6531f70",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Previous",
+-                    "type": "Button",
+-                    "id": "2776c80d-3c14-4091-8c56-d04ced07a2b0",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Next",
+-                    "type": "Button",
+-                    "id": "b7230bb6-fc9b-4f52-8b25-f5e19cb2c2ba",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Sprint",
+-                    "type": "Button",
+-                    "id": "641cd816-40e6-41b4-8c3d-04687c349290",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                }
+-            ],
+-            "bindings": [
+-                {
+-                    "name": "",
+-                    "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
+-                    "path": "<Gamepad>/leftStick",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "WASD",
+-                    "id": "00ca640b-d935-4593-8157-c05846ea39b3",
+-                    "path": "Dpad",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "",
+-                    "action": "Move",
+-                    "isComposite": true,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "e2062cb9-1b15-46a2-838c-2f8d72a0bdd9",
+-                    "path": "<Keyboard>/w",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "8180e8bd-4097-4f4e-ab88-4523101a6ce9",
+-                    "path": "<Keyboard>/upArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "320bffee-a40b-4347-ac70-c210eb8bc73a",
+-                    "path": "<Keyboard>/s",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "1c5327b5-f71c-4f60-99c7-4e737386f1d1",
+-                    "path": "<Keyboard>/downArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "d2581a9b-1d11-4566-b27d-b92aff5fabbc",
+-                    "path": "<Keyboard>/a",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "2e46982e-44cc-431b-9f0b-c11910bf467a",
+-                    "path": "<Keyboard>/leftArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "fcfe95b8-67b9-4526-84b5-5d0bc98d6400",
+-                    "path": "<Keyboard>/d",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "77bff152-3580-4b21-b6de-dcd0c7e41164",
+-                    "path": "<Keyboard>/rightArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "",
+-                    "id": "1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8",
+-                    "path": "<XRController>/{Primary2DAxis}",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "3ea4d645-4504-4529-b061-ab81934c3752",
+-                    "path": "<Joystick>/stick",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Move",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
+-                    "path": "<Gamepad>/rightStick",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Look",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
+-                    "path": "<Pointer>/delta",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse;Touch",
+-                    "action": "Look",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
+-                    "path": "<Joystick>/{Hatswitch}",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Look",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
+-                    "path": "<Gamepad>/buttonWest",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
+-                    "path": "<Mouse>/leftButton",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "886e731e-7071-4ae4-95c0-e61739dad6fd",
+-                    "path": "<Touchscreen>/primaryTouch/tap",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Touch",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "ee3d0cd2-254e-47a7-a8cb-bc94d9658c54",
+-                    "path": "<Joystick>/trigger",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "8255d333-5683-4943-a58a-ccb207ff1dce",
+-                    "path": "<XRController>/{PrimaryAction}",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "b3c1c7f0-bd20-4ee7-a0f1-899b24bca6d7",
+-                    "path": "<Keyboard>/enter",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Attack",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "cbac6039-9c09-46a1-b5f2-4e5124ccb5ed",
+-                    "path": "<Keyboard>/2",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Next",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "e15ca19d-e649-4852-97d5-7fe8ccc44e94",
+-                    "path": "<Gamepad>/dpad/right",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Next",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "f2e9ba44-c423-42a7-ad56-f20975884794",
+-                    "path": "<Keyboard>/leftShift",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Sprint",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "8cbb2f4b-a784-49cc-8d5e-c010b8c7f4e6",
+-                    "path": "<Gamepad>/leftStickPress",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Sprint",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "d8bf24bf-3f2f-4160-a97c-38ec1eb520ba",
+-                    "path": "<XRController>/trigger",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "Sprint",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "eb40bb66-4559-4dfa-9a2f-820438abb426",
+-                    "path": "<Keyboard>/space",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Jump",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "daba33a1-ad0c-4742-a909-43ad1cdfbeb6",
+-                    "path": "<Gamepad>/buttonSouth",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Jump",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "603f3daf-40bd-4854-8724-93e8017f59e3",
+-                    "path": "<XRController>/secondaryButton",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "Jump",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "1534dc16-a6aa-499d-9c3a-22b47347b52a",
+-                    "path": "<Keyboard>/1",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Previous",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "25060bbd-a3a6-476e-8fba-45ae484aad05",
+-                    "path": "<Gamepad>/dpad/left",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Previous",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "1c04ea5f-b012-41d1-a6f7-02e963b52893",
+-                    "path": "<Keyboard>/e",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Interact",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "b3f66d0b-7751-423f-908b-a11c5bd95930",
+-                    "path": "<Gamepad>/buttonNorth",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Interact",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "4f4649ac-64a8-4a73-af11-b3faef356a4d",
+-                    "path": "<Gamepad>/buttonEast",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Gamepad",
+-                    "action": "Crouch",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "36e52cba-0905-478e-a818-f4bfcb9f3b9a",
+-                    "path": "<Keyboard>/c",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Crouch",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                }
+-            ]
+-        },
+-        {
+-            "name": "UI",
+-            "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
+-            "actions": [
+-                {
+-                    "name": "Navigate",
+-                    "type": "PassThrough",
+-                    "id": "c95b2375-e6d9-4b88-9c4c-c5e76515df4b",
+-                    "expectedControlType": "Vector2",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Submit",
+-                    "type": "Button",
+-                    "id": "7607c7b6-cd76-4816-beef-bd0341cfe950",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Cancel",
+-                    "type": "Button",
+-                    "id": "15cef263-9014-4fd5-94d9-4e4a6234a6ef",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "Point",
+-                    "type": "PassThrough",
+-                    "id": "32b35790-4ed0-4e9a-aa41-69ac6d629449",
+-                    "expectedControlType": "Vector2",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": true
+-                },
+-                {
+-                    "name": "Click",
+-                    "type": "PassThrough",
+-                    "id": "3c7022bf-7922-4f7c-a998-c437916075ad",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": true
+-                },
+-                {
+-                    "name": "RightClick",
+-                    "type": "PassThrough",
+-                    "id": "44b200b1-1557-4083-816c-b22cbdf77ddf",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "MiddleClick",
+-                    "type": "PassThrough",
+-                    "id": "dad70c86-b58c-4b17-88ad-f5e53adf419e",
+-                    "expectedControlType": "Button",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "ScrollWheel",
+-                    "type": "PassThrough",
+-                    "id": "0489e84a-4833-4c40-bfae-cea84b696689",
+-                    "expectedControlType": "Vector2",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "TrackedDevicePosition",
+-                    "type": "PassThrough",
+-                    "id": "24908448-c609-4bc3-a128-ea258674378a",
+-                    "expectedControlType": "Vector3",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                },
+-                {
+-                    "name": "TrackedDeviceOrientation",
+-                    "type": "PassThrough",
+-                    "id": "9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be",
+-                    "expectedControlType": "Quaternion",
+-                    "processors": "",
+-                    "interactions": "",
+-                    "initialStateCheck": false
+-                }
+-            ],
+-            "bindings": [
+-                {
+-                    "name": "Gamepad",
+-                    "id": "809f371f-c5e2-4e7a-83a1-d867598f40dd",
+-                    "path": "2DVector",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "",
+-                    "action": "Navigate",
+-                    "isComposite": true,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "14a5d6e8-4aaf-4119-a9ef-34b8c2c548bf",
+-                    "path": "<Gamepad>/leftStick/up",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "9144cbe6-05e1-4687-a6d7-24f99d23dd81",
+-                    "path": "<Gamepad>/rightStick/up",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "2db08d65-c5fb-421b-983f-c71163608d67",
+-                    "path": "<Gamepad>/leftStick/down",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "58748904-2ea9-4a80-8579-b500e6a76df8",
+-                    "path": "<Gamepad>/rightStick/down",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "8ba04515-75aa-45de-966d-393d9bbd1c14",
+-                    "path": "<Gamepad>/leftStick/left",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "712e721c-bdfb-4b23-a86c-a0d9fcfea921",
+-                    "path": "<Gamepad>/rightStick/left",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "fcd248ae-a788-4676-a12e-f4d81205600b",
+-                    "path": "<Gamepad>/leftStick/right",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "1f04d9bc-c50b-41a1-bfcc-afb75475ec20",
+-                    "path": "<Gamepad>/rightStick/right",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "",
+-                    "id": "fb8277d4-c5cd-4663-9dc7-ee3f0b506d90",
+-                    "path": "<Gamepad>/dpad",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Gamepad",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "Joystick",
+-                    "id": "e25d9774-381c-4a61-b47c-7b6b299ad9f9",
+-                    "path": "2DVector",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "",
+-                    "action": "Navigate",
+-                    "isComposite": true,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "3db53b26-6601-41be-9887-63ac74e79d19",
+-                    "path": "<Joystick>/stick/up",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "0cb3e13e-3d90-4178-8ae6-d9c5501d653f",
+-                    "path": "<Joystick>/stick/down",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "0392d399-f6dd-4c82-8062-c1e9c0d34835",
+-                    "path": "<Joystick>/stick/left",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "942a66d9-d42f-43d6-8d70-ecb4ba5363bc",
+-                    "path": "<Joystick>/stick/right",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Joystick",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "Keyboard",
+-                    "id": "ff527021-f211-4c02-933e-5976594c46ed",
+-                    "path": "2DVector",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "",
+-                    "action": "Navigate",
+-                    "isComposite": true,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "563fbfdd-0f09-408d-aa75-8642c4f08ef0",
+-                    "path": "<Keyboard>/w",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "up",
+-                    "id": "eb480147-c587-4a33-85ed-eb0ab9942c43",
+-                    "path": "<Keyboard>/upArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "2bf42165-60bc-42ca-8072-8c13ab40239b",
+-                    "path": "<Keyboard>/s",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "down",
+-                    "id": "85d264ad-e0a0-4565-b7ff-1a37edde51ac",
+-                    "path": "<Keyboard>/downArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "74214943-c580-44e4-98eb-ad7eebe17902",
+-                    "path": "<Keyboard>/a",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "left",
+-                    "id": "cea9b045-a000-445b-95b8-0c171af70a3b",
+-                    "path": "<Keyboard>/leftArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "8607c725-d935-4808-84b1-8354e29bab63",
+-                    "path": "<Keyboard>/d",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "right",
+-                    "id": "4cda81dc-9edd-4e03-9d7c-a71a14345d0b",
+-                    "path": "<Keyboard>/rightArrow",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Navigate",
+-                    "isComposite": false,
+-                    "isPartOfComposite": true
+-                },
+-                {
+-                    "name": "",
+-                    "id": "9e92bb26-7e3b-4ec4-b06b-3c8f8e498ddc",
+-                    "path": "*/{Submit}",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+-                    "action": "Submit",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "82627dcc-3b13-4ba9-841d-e4b746d6553e",
+-                    "path": "*/{Cancel}",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+-                    "action": "Cancel",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "c52c8e0b-8179-41d3-b8a1-d149033bbe86",
+-                    "path": "<Mouse>/position",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Point",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "e1394cbc-336e-44ce-9ea8-6007ed6193f7",
+-                    "path": "<Pen>/position",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "Point",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "5693e57a-238a-46ed-b5ae-e64e6e574302",
+-                    "path": "<Touchscreen>/touch*/position",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Touch",
+-                    "action": "Point",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "4faf7dc9-b979-4210-aa8c-e808e1ef89f5",
+-                    "path": "<Mouse>/leftButton",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Click",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "8d66d5ba-88d7-48e6-b1cd-198bbfef7ace",
+-                    "path": "<Pen>/tip",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "Click",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "47c2a644-3ebc-4dae-a106-589b7ca75b59",
+-                    "path": "<Touchscreen>/touch*/press",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Touch",
+-                    "action": "Click",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "bb9e6b34-44bf-4381-ac63-5aa15d19f677",
+-                    "path": "<XRController>/trigger",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "Click",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "38c99815-14ea-4617-8627-164d27641299",
+-                    "path": "<Mouse>/scroll",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": ";Keyboard&Mouse",
+-                    "action": "ScrollWheel",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "4c191405-5738-4d4b-a523-c6a301dbf754",
+-                    "path": "<Mouse>/rightButton",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "RightClick",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "24066f69-da47-44f3-a07e-0015fb02eb2e",
+-                    "path": "<Mouse>/middleButton",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "Keyboard&Mouse",
+-                    "action": "MiddleClick",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "7236c0d9-6ca3-47cf-a6ee-a97f5b59ea77",
+-                    "path": "<XRController>/devicePosition",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "TrackedDevicePosition",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                },
+-                {
+-                    "name": "",
+-                    "id": "23e01e3a-f935-4948-8d8b-9bcac77714fb",
+-                    "path": "<XRController>/deviceRotation",
+-                    "interactions": "",
+-                    "processors": "",
+-                    "groups": "XR",
+-                    "action": "TrackedDeviceOrientation",
+-                    "isComposite": false,
+-                    "isPartOfComposite": false
+-                }
+-            ]
+-        }
+-    ],
+-    "controlSchemes": [
+-        {
+-            "name": "Keyboard&Mouse",
+-            "bindingGroup": "Keyboard&Mouse",
+-            "devices": [
+-                {
+-                    "devicePath": "<Keyboard>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                },
+-                {
+-                    "devicePath": "<Mouse>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                }
+-            ]
+-        },
+-        {
+-            "name": "Gamepad",
+-            "bindingGroup": "Gamepad",
+-            "devices": [
+-                {
+-                    "devicePath": "<Gamepad>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                }
+-            ]
+-        },
+-        {
+-            "name": "Touch",
+-            "bindingGroup": "Touch",
+-            "devices": [
+-                {
+-                    "devicePath": "<Touchscreen>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                }
+-            ]
+-        },
+-        {
+-            "name": "Joystick",
+-            "bindingGroup": "Joystick",
+-            "devices": [
+-                {
+-                    "devicePath": "<Joystick>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                }
+-            ]
+-        },
+-        {
+-            "name": "XR",
+-            "bindingGroup": "XR",
+-            "devices": [
+-                {
+-                    "devicePath": "<XRController>",
+-                    "isOptional": false,
+-                    "isOR": false
+-                }
+-            ]
+-        }
+-    ]
+-}
+\ No newline at end of file
+Index: Assets/BoostPlaceholder.png.meta
+===================================================================
+diff --git a/Assets/BoostPlaceholder.png.meta b/Assets/BoostPlaceholder.png.meta
+deleted file mode 100644
+--- a/Assets/BoostPlaceholder.png.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,143 +0,0 @@
+-fileFormatVersion: 2
+-guid: 2b1554dc848cab7499c3ab718bdaa8b8
+-TextureImporter:
+-  internalIDToNameTable:
+-  - first:
+-      213: 4110690625146549454
+-    second: BoostPlaceholder_0
+-  externalObjects: {}
+-  serializedVersion: 13
+-  mipmaps:
+-    mipMapMode: 0
+-    enableMipMap: 0
+-    sRGBTexture: 1
+-    linearTexture: 0
+-    fadeOut: 0
+-    borderMipMap: 0
+-    mipMapsPreserveCoverage: 0
+-    alphaTestReferenceValue: 0.5
+-    mipMapFadeDistanceStart: 1
+-    mipMapFadeDistanceEnd: 3
+-  bumpmap:
+-    convertToNormalMap: 0
+-    externalNormalMap: 0
+-    heightScale: 0.25
+-    normalMapFilter: 0
+-    flipGreenChannel: 0
+-  isReadable: 0
+-  streamingMipmaps: 0
+-  streamingMipmapsPriority: 0
+-  vTOnly: 0
+-  ignoreMipmapLimit: 0
+-  grayScaleToAlpha: 0
+-  generateCubemap: 6
+-  cubemapConvolution: 0
+-  seamlessCubemap: 0
+-  textureFormat: 1
+-  maxTextureSize: 2048
+-  textureSettings:
+-    serializedVersion: 2
+-    filterMode: 1
+-    aniso: 1
+-    mipBias: 0
+-    wrapU: 1
+-    wrapV: 1
+-    wrapW: 1
+-  nPOTScale: 0
+-  lightmap: 0
+-  compressionQuality: 50
+-  spriteMode: 2
+-  spriteExtrude: 1
+-  spriteMeshType: 1
+-  alignment: 0
+-  spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+-  spriteGenerateFallbackPhysicsShape: 1
+-  alphaUsage: 1
+-  alphaIsTransparency: 1
+-  spriteTessellationDetail: -1
+-  textureType: 8
+-  textureShape: 1
+-  singleChannelComponent: 0
+-  flipbookRows: 1
+-  flipbookColumns: 1
+-  maxTextureSizeSet: 0
+-  compressionQualitySet: 0
+-  textureFormatSet: 0
+-  ignorePngGamma: 0
+-  applyGammaDecoding: 0
+-  swizzle: 50462976
+-  cookieLightType: 0
+-  platformSettings:
+-  - serializedVersion: 4
+-    buildTarget: DefaultTexturePlatform
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 4
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  spriteSheet:
+-    serializedVersion: 2
+-    sprites:
+-    - serializedVersion: 2
+-      name: BoostPlaceholder_0
+-      rect:
+-        serializedVersion: 2
+-        x: 0
+-        y: 0
+-        width: 842
+-        height: 898
+-      alignment: 0
+-      pivot: {x: 0, y: 0}
+-      border: {x: 0, y: 0, z: 0, w: 0}
+-      customData: 
+-      outline: []
+-      physicsShape: []
+-      tessellationDetail: -1
+-      bones: []
+-      spriteID: ec4736d185b1c0930800000000000000
+-      internalID: 4110690625146549454
+-      vertices: []
+-      indices: 
+-      edges: []
+-      weights: []
+-    outline: []
+-    customData: 
+-    physicsShape: []
+-    bones: []
+-    spriteID: 
+-    internalID: 0
+-    vertices: []
+-    indices: 
+-    edges: []
+-    weights: []
+-    secondaryTextures: []
+-    spriteCustomMetadata:
+-      entries: []
+-    nameFileIdTable:
+-      BoostPlaceholder_0: 4110690625146549454
+-  mipmapLimitGroupName: 
+-  pSDRemoveMatte: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/GalagaPlaceholder.png.meta
+===================================================================
+diff --git a/Assets/GalagaPlaceholder.png.meta b/Assets/GalagaPlaceholder.png.meta
+deleted file mode 100644
+--- a/Assets/GalagaPlaceholder.png.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,143 +0,0 @@
+-fileFormatVersion: 2
+-guid: 21a020eacbfd7984782a56a9474b6265
+-TextureImporter:
+-  internalIDToNameTable:
+-  - first:
+-      213: -8105348701354867240
+-    second: GalagaPlaceholder_0
+-  externalObjects: {}
+-  serializedVersion: 13
+-  mipmaps:
+-    mipMapMode: 0
+-    enableMipMap: 0
+-    sRGBTexture: 1
+-    linearTexture: 0
+-    fadeOut: 0
+-    borderMipMap: 0
+-    mipMapsPreserveCoverage: 0
+-    alphaTestReferenceValue: 0.5
+-    mipMapFadeDistanceStart: 1
+-    mipMapFadeDistanceEnd: 3
+-  bumpmap:
+-    convertToNormalMap: 0
+-    externalNormalMap: 0
+-    heightScale: 0.25
+-    normalMapFilter: 0
+-    flipGreenChannel: 0
+-  isReadable: 0
+-  streamingMipmaps: 0
+-  streamingMipmapsPriority: 0
+-  vTOnly: 0
+-  ignoreMipmapLimit: 0
+-  grayScaleToAlpha: 0
+-  generateCubemap: 6
+-  cubemapConvolution: 0
+-  seamlessCubemap: 0
+-  textureFormat: 1
+-  maxTextureSize: 2048
+-  textureSettings:
+-    serializedVersion: 2
+-    filterMode: 1
+-    aniso: 1
+-    mipBias: 0
+-    wrapU: 1
+-    wrapV: 1
+-    wrapW: 1
+-  nPOTScale: 0
+-  lightmap: 0
+-  compressionQuality: 50
+-  spriteMode: 2
+-  spriteExtrude: 1
+-  spriteMeshType: 1
+-  alignment: 0
+-  spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+-  spriteGenerateFallbackPhysicsShape: 1
+-  alphaUsage: 1
+-  alphaIsTransparency: 1
+-  spriteTessellationDetail: -1
+-  textureType: 8
+-  textureShape: 1
+-  singleChannelComponent: 0
+-  flipbookRows: 1
+-  flipbookColumns: 1
+-  maxTextureSizeSet: 0
+-  compressionQualitySet: 0
+-  textureFormatSet: 0
+-  ignorePngGamma: 0
+-  applyGammaDecoding: 0
+-  swizzle: 50462976
+-  cookieLightType: 0
+-  platformSettings:
+-  - serializedVersion: 4
+-    buildTarget: DefaultTexturePlatform
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 4
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  spriteSheet:
+-    serializedVersion: 2
+-    sprites:
+-    - serializedVersion: 2
+-      name: GalagaPlaceholder_0
+-      rect:
+-        serializedVersion: 2
+-        x: 0
+-        y: 0
+-        width: 840
+-        height: 780
+-      alignment: 0
+-      pivot: {x: 0, y: 0}
+-      border: {x: 0, y: 0, z: 0, w: 0}
+-      customData: 
+-      outline: []
+-      physicsShape: []
+-      tessellationDetail: -1
+-      bones: []
+-      spriteID: 8d5c113dc44048f80800000000000000
+-      internalID: -8105348701354867240
+-      vertices: []
+-      indices: 
+-      edges: []
+-      weights: []
+-    outline: []
+-    customData: 
+-    physicsShape: []
+-    bones: []
+-    spriteID: 
+-    internalID: 0
+-    vertices: []
+-    indices: 
+-    edges: []
+-    weights: []
+-    secondaryTextures: []
+-    spriteCustomMetadata:
+-      entries: []
+-    nameFileIdTable:
+-      GalagaPlaceholder_0: -8105348701354867240
+-  mipmapLimitGroupName: 
+-  pSDRemoveMatte: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/InputSystem_Actions.inputactions.meta
+===================================================================
+diff --git a/Assets/InputSystem_Actions.inputactions.meta b/Assets/InputSystem_Actions.inputactions.meta
+deleted file mode 100644
+--- a/Assets/InputSystem_Actions.inputactions.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,14 +0,0 @@
+-fileFormatVersion: 2
+-guid: f61791dd827a37b40b592c9fe0c2def2
+-ScriptedImporter:
+-  internalIDToNameTable: []
+-  externalObjects: {}
+-  serializedVersion: 2
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+-  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+-  generateWrapperCode: 0
+-  wrapperCodePath: 
+-  wrapperClassName: 
+-  wrapperCodeNamespace: 
+Index: Assets/Art/AlienShip.png.meta
+===================================================================
+diff --git a/Assets/Art/AlienShip.png.meta b/Assets/Art/AlienShip.png.meta
+deleted file mode 100644
+--- a/Assets/Art/AlienShip.png.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,143 +0,0 @@
+-fileFormatVersion: 2
+-guid: a24b5d0e742cd4734989817309c53e36
+-TextureImporter:
+-  internalIDToNameTable:
+-  - first:
+-      213: 5297397169720667442
+-    second: AlienShip_0
+-  externalObjects: {}
+-  serializedVersion: 13
+-  mipmaps:
+-    mipMapMode: 0
+-    enableMipMap: 0
+-    sRGBTexture: 1
+-    linearTexture: 0
+-    fadeOut: 0
+-    borderMipMap: 0
+-    mipMapsPreserveCoverage: 0
+-    alphaTestReferenceValue: 0.5
+-    mipMapFadeDistanceStart: 1
+-    mipMapFadeDistanceEnd: 3
+-  bumpmap:
+-    convertToNormalMap: 0
+-    externalNormalMap: 0
+-    heightScale: 0.25
+-    normalMapFilter: 0
+-    flipGreenChannel: 0
+-  isReadable: 0
+-  streamingMipmaps: 0
+-  streamingMipmapsPriority: 0
+-  vTOnly: 0
+-  ignoreMipmapLimit: 0
+-  grayScaleToAlpha: 0
+-  generateCubemap: 6
+-  cubemapConvolution: 0
+-  seamlessCubemap: 0
+-  textureFormat: 1
+-  maxTextureSize: 2048
+-  textureSettings:
+-    serializedVersion: 2
+-    filterMode: 0
+-    aniso: 1
+-    mipBias: 0
+-    wrapU: 1
+-    wrapV: 1
+-    wrapW: 1
+-  nPOTScale: 0
+-  lightmap: 0
+-  compressionQuality: 50
+-  spriteMode: 1
+-  spriteExtrude: 1
+-  spriteMeshType: 1
+-  alignment: 0
+-  spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 32
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+-  spriteGenerateFallbackPhysicsShape: 1
+-  alphaUsage: 1
+-  alphaIsTransparency: 1
+-  spriteTessellationDetail: -1
+-  textureType: 8
+-  textureShape: 1
+-  singleChannelComponent: 0
+-  flipbookRows: 1
+-  flipbookColumns: 1
+-  maxTextureSizeSet: 0
+-  compressionQualitySet: 0
+-  textureFormatSet: 0
+-  ignorePngGamma: 0
+-  applyGammaDecoding: 0
+-  swizzle: 50462976
+-  cookieLightType: 0
+-  platformSettings:
+-  - serializedVersion: 4
+-    buildTarget: DefaultTexturePlatform
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: 4
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 4
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  spriteSheet:
+-    serializedVersion: 2
+-    sprites:
+-    - serializedVersion: 2
+-      name: AlienShip_0
+-      rect:
+-        serializedVersion: 2
+-        x: 0
+-        y: 0
+-        width: 96
+-        height: 124
+-      alignment: 0
+-      pivot: {x: 0, y: 0}
+-      border: {x: 0, y: 0, z: 0, w: 0}
+-      customData: 
+-      outline: []
+-      physicsShape: []
+-      tessellationDetail: -1
+-      bones: []
+-      spriteID: 23d2c57b8a2248940800000000000000
+-      internalID: 5297397169720667442
+-      vertices: []
+-      indices: 
+-      edges: []
+-      weights: []
+-    outline: []
+-    customData: 
+-    physicsShape: []
+-    bones: []
+-    spriteID: 5e97eb03825dee720800000000000000
+-    internalID: 0
+-    vertices: []
+-    indices: 
+-    edges: []
+-    weights: []
+-    secondaryTextures: []
+-    spriteCustomMetadata:
+-      entries: []
+-    nameFileIdTable:
+-      AlienShip_0: 5297397169720667442
+-  mipmapLimitGroupName: 
+-  pSDRemoveMatte: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/DeleteMe.cs
+===================================================================
+diff --git a/Assets/DeleteMe.cs b/Assets/DeleteMe.cs
+deleted file mode 100644
+--- a/Assets/DeleteMe.cs	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,17 +0,0 @@
+-using UnityEngine; 
+-
+-public class DeleteMe : MonoBehaviour
+-{
+-    // hi initial committ
+-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+-    void Start()
+-    {
+-        
+-    }
+-
+-    // Update is called once per frame
+-    void Update()
+-    {
+-        
+-    }
+-}
+Index: Assets/DeleteMe.cs.meta
+===================================================================
+diff --git a/Assets/DeleteMe.cs.meta b/Assets/DeleteMe.cs.meta
+deleted file mode 100644
+--- a/Assets/DeleteMe.cs.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,2 +0,0 @@
+-fileFormatVersion: 2
+-guid: 4be5f36e5374cb644b2b05216a56d312
+\ No newline at end of file
+Index: Assets/DefaultVolumeProfile.asset
+===================================================================
+diff --git a/Assets/DefaultVolumeProfile.asset b/Assets/DefaultVolumeProfile.asset
+deleted file mode 100644
+--- a/Assets/DefaultVolumeProfile.asset	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,795 +0,0 @@
+-%YAML 1.1
+-%TAG !u! tag:unity3d.com,2011:
+---- !u!114 &-8186968272690591729
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 3eb4b772797da9440885e8bd939e9560, type: 3}
+-  m_Name: ColorCurves
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  master:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 2
+-      m_Loop: 0
+-      m_ZeroValue: 0
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve:
+-        - serializedVersion: 3
+-          time: 0
+-          value: 0
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        - serializedVersion: 3
+-          time: 1
+-          value: 1
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  red:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 2
+-      m_Loop: 0
+-      m_ZeroValue: 0
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve:
+-        - serializedVersion: 3
+-          time: 0
+-          value: 0
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        - serializedVersion: 3
+-          time: 1
+-          value: 1
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  green:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 2
+-      m_Loop: 0
+-      m_ZeroValue: 0
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve:
+-        - serializedVersion: 3
+-          time: 0
+-          value: 0
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        - serializedVersion: 3
+-          time: 1
+-          value: 1
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  blue:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 2
+-      m_Loop: 0
+-      m_ZeroValue: 0
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve:
+-        - serializedVersion: 3
+-          time: 0
+-          value: 0
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        - serializedVersion: 3
+-          time: 1
+-          value: 1
+-          inSlope: 1
+-          outSlope: 1
+-          tangentMode: 0
+-          weightedMode: 0
+-          inWeight: 0
+-          outWeight: 0
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  hueVsHue:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 0
+-      m_Loop: 1
+-      m_ZeroValue: 0.5
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve: []
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  hueVsSat:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 0
+-      m_Loop: 1
+-      m_ZeroValue: 0.5
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve: []
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  satVsSat:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 0
+-      m_Loop: 0
+-      m_ZeroValue: 0.5
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve: []
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+-  lumVsSat:
+-    m_OverrideState: 1
+-    m_Value:
+-      <length>k__BackingField: 0
+-      m_Loop: 0
+-      m_ZeroValue: 0.5
+-      m_Range: 1
+-      m_Curve:
+-        serializedVersion: 2
+-        m_Curve: []
+-        m_PreInfinity: 2
+-        m_PostInfinity: 2
+-        m_RotationOrder: 4
+---- !u!114 &-7645455725216806467
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
+-  m_Name: FilmGrain
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  type:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  response:
+-    m_OverrideState: 1
+-    m_Value: 0.8
+-  texture:
+-    m_OverrideState: 1
+-    m_Value: {fileID: 0}
+---- !u!114 &-6951754464447674219
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+-  m_Name: ShadowsMidtonesHighlights
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  shadows:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+-  midtones:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+-  highlights:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+-  shadowsStart:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  shadowsEnd:
+-    m_OverrideState: 1
+-    m_Value: 0.3
+-  highlightsStart:
+-    m_OverrideState: 1
+-    m_Value: 0.55
+-  highlightsEnd:
+-    m_OverrideState: 1
+-    m_Value: 1
+---- !u!114 &-4210620904635426390
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
+-  m_Name: ChannelMixer
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  redOutRedIn:
+-    m_OverrideState: 1
+-    m_Value: 100
+-  redOutGreenIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  redOutBlueIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  greenOutRedIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  greenOutGreenIn:
+-    m_OverrideState: 1
+-    m_Value: 100
+-  greenOutBlueIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  blueOutRedIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  blueOutGreenIn:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  blueOutBlueIn:
+-    m_OverrideState: 1
+-    m_Value: 100
+---- !u!114 &-3978695733392391637
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+-  m_Name: Bloom
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  skipIterations:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  threshold:
+-    m_OverrideState: 1
+-    m_Value: 0.9
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  scatter:
+-    m_OverrideState: 1
+-    m_Value: 0.7
+-  clamp:
+-    m_OverrideState: 1
+-    m_Value: 65472
+-  tint:
+-    m_OverrideState: 1
+-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+-  highQualityFiltering:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  downscale:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  maxIterations:
+-    m_OverrideState: 1
+-    m_Value: 6
+-  dirtTexture:
+-    m_OverrideState: 1
+-    m_Value: {fileID: 0}
+-    dimension: 1
+-  dirtIntensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &-3757877592200609216
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
+-  m_Name: SplitToning
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  shadows:
+-    m_OverrideState: 1
+-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+-  highlights:
+-    m_OverrideState: 1
+-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+-  balance:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &-3386560400091697801
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+-  m_Name: DepthOfField
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  mode:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  gaussianStart:
+-    m_OverrideState: 1
+-    m_Value: 10
+-  gaussianEnd:
+-    m_OverrideState: 1
+-    m_Value: 30
+-  gaussianMaxRadius:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  highQualitySampling:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  focusDistance:
+-    m_OverrideState: 1
+-    m_Value: 10
+-  aperture:
+-    m_OverrideState: 1
+-    m_Value: 5.6
+-  focalLength:
+-    m_OverrideState: 1
+-    m_Value: 50
+-  bladeCount:
+-    m_OverrideState: 1
+-    m_Value: 5
+-  bladeCurvature:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  bladeRotation:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &-1083910812058648046
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
+-  m_Name: ProbeVolumesOptions
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  normalBias:
+-    m_OverrideState: 1
+-    m_Value: 0.05
+-  viewBias:
+-    m_OverrideState: 1
+-    m_Value: 0.1
+-  scaleBiasWithMinProbeDistance:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  samplingNoise:
+-    m_OverrideState: 1
+-    m_Value: 0.1
+-  animateSamplingNoise:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  leakReductionMode:
+-    m_OverrideState: 1
+-    m_Value: 2
+-  minValidDotProductValue:
+-    m_OverrideState: 1
+-    m_Value: 0.1
+-  occlusionOnlyReflectionNormalization:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  intensityMultiplier:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  skyOcclusionIntensityMultiplier:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  worldOffset:
+-    m_OverrideState: 1
+-    m_Value: {x: 0, y: 0, z: 0}
+---- !u!114 &-277880470225475626
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+-  m_Name: MotionBlur
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  mode:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  quality:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  clamp:
+-    m_OverrideState: 1
+-    m_Value: 0.05
+---- !u!114 &11400000
+-MonoBehaviour:
+-  m_ObjectHideFlags: 0
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+-  m_Name: DefaultVolumeProfile
+-  m_EditorClassIdentifier: 
+-  components:
+-  - {fileID: 1247868777620691934}
+-  - {fileID: -277880470225475626}
+-  - {fileID: 2338690907228448291}
+-  - {fileID: 2335868966179733374}
+-  - {fileID: 3460444317416099510}
+-  - {fileID: 7933203426823181213}
+-  - {fileID: 5762530381802164056}
+-  - {fileID: -3386560400091697801}
+-  - {fileID: 156332030701414761}
+-  - {fileID: 9099548931283147545}
+-  - {fileID: -3757877592200609216}
+-  - {fileID: 2332282131777942337}
+-  - {fileID: -4210620904635426390}
+-  - {fileID: -6951754464447674219}
+-  - {fileID: 8549655192814258499}
+-  - {fileID: -7645455725216806467}
+-  - {fileID: -8186968272690591729}
+-  - {fileID: -3978695733392391637}
+-  - {fileID: -1083910812058648046}
+---- !u!114 &156332030701414761
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+-  m_Name: LiftGammaGain
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  lift:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+-  gamma:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+-  gain:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+---- !u!114 &1247868777620691934
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+-  m_Name: Tonemapping
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  mode:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  neutralHDRRangeReductionMode:
+-    m_OverrideState: 1
+-    m_Value: 2
+-  acesPreset:
+-    m_OverrideState: 1
+-    m_Value: 3
+-  hueShiftAmount:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  detectPaperWhite:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  paperWhite:
+-    m_OverrideState: 1
+-    m_Value: 300
+-  detectBrightnessLimits:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  minNits:
+-    m_OverrideState: 1
+-    m_Value: 0.005
+-  maxNits:
+-    m_OverrideState: 1
+-    m_Value: 1000
+---- !u!114 &2332282131777942337
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: e021b4c809a781e468c2988c016ebbea, type: 3}
+-  m_Name: ColorLookup
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  texture:
+-    m_OverrideState: 1
+-    m_Value: {fileID: 0}
+-    dimension: 1
+-  contribution:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &2335868966179733374
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
+-  m_Name: LensDistortion
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  xMultiplier:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  yMultiplier:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  center:
+-    m_OverrideState: 1
+-    m_Value: {x: 0.5, y: 0.5}
+-  scale:
+-    m_OverrideState: 1
+-    m_Value: 1
+---- !u!114 &2338690907228448291
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+-  m_Name: WhiteBalance
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  temperature:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  tint:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &3460444317416099510
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+-  m_Name: ChromaticAberration
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &5762530381802164056
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 06437c1ff663d574d9447842ba0a72e4, type: 3}
+-  m_Name: ScreenSpaceLensFlare
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  tintColor:
+-    m_OverrideState: 1
+-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+-  bloomMip:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  firstFlareIntensity:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  secondaryFlareIntensity:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  warpedFlareIntensity:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  warpedFlareScale:
+-    m_OverrideState: 1
+-    m_Value: {x: 1, y: 1}
+-  samples:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  sampleDimmer:
+-    m_OverrideState: 1
+-    m_Value: 0.5
+-  vignetteEffect:
+-    m_OverrideState: 1
+-    m_Value: 1
+-  startingPosition:
+-    m_OverrideState: 1
+-    m_Value: 1.25
+-  scale:
+-    m_OverrideState: 1
+-    m_Value: 1.5
+-  streaksIntensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  streaksLength:
+-    m_OverrideState: 1
+-    m_Value: 0.5
+-  streaksOrientation:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  streaksThreshold:
+-    m_OverrideState: 1
+-    m_Value: 0.25
+-  resolution:
+-    m_OverrideState: 1
+-    m_Value: 4
+-  chromaticAbberationIntensity:
+-    m_OverrideState: 1
+-    m_Value: 0.5
+---- !u!114 &7933203426823181213
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+-  m_Name: ColorAdjustments
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  postExposure:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  contrast:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  colorFilter:
+-    m_OverrideState: 1
+-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+-  hueShift:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  saturation:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &8549655192814258499
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+-  m_Name: Vignette
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  color:
+-    m_OverrideState: 1
+-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+-  center:
+-    m_OverrideState: 1
+-    m_Value: {x: 0.5, y: 0.5}
+-  intensity:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  smoothness:
+-    m_OverrideState: 1
+-    m_Value: 0.2
+-  rounded:
+-    m_OverrideState: 1
+-    m_Value: 0
+---- !u!114 &9099548931283147545
+-MonoBehaviour:
+-  m_ObjectHideFlags: 3
+-  m_CorrespondingSourceObject: {fileID: 0}
+-  m_PrefabInstance: {fileID: 0}
+-  m_PrefabAsset: {fileID: 0}
+-  m_GameObject: {fileID: 0}
+-  m_Enabled: 1
+-  m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
+-  m_Name: PaniniProjection
+-  m_EditorClassIdentifier: 
+-  active: 1
+-  distance:
+-    m_OverrideState: 1
+-    m_Value: 0
+-  cropToFit:
+-    m_OverrideState: 1
+-    m_Value: 1
+Index: Assets/DefaultVolumeProfile.asset.meta
+===================================================================
+diff --git a/Assets/DefaultVolumeProfile.asset.meta b/Assets/DefaultVolumeProfile.asset.meta
+deleted file mode 100644
+--- a/Assets/DefaultVolumeProfile.asset.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: a9e7fa2f3949c17439f8921e30044bdd
+-NativeFormatImporter:
+-  externalObjects: {}
+-  mainObjectFileID: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/PulsePlaceholder.png.meta
+===================================================================
+diff --git a/Assets/PulsePlaceholder.png.meta b/Assets/PulsePlaceholder.png.meta
+deleted file mode 100644
+--- a/Assets/PulsePlaceholder.png.meta	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ /dev/null	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
+@@ -1,143 +0,0 @@
+-fileFormatVersion: 2
+-guid: 9fca1754dae93bd4fac2041ab649e5a8
+-TextureImporter:
+-  internalIDToNameTable:
+-  - first:
+-      213: 1040408261327319319
+-    second: PulsePlaceholder_0
+-  externalObjects: {}
+-  serializedVersion: 13
+-  mipmaps:
+-    mipMapMode: 0
+-    enableMipMap: 0
+-    sRGBTexture: 1
+-    linearTexture: 0
+-    fadeOut: 0
+-    borderMipMap: 0
+-    mipMapsPreserveCoverage: 0
+-    alphaTestReferenceValue: 0.5
+-    mipMapFadeDistanceStart: 1
+-    mipMapFadeDistanceEnd: 3
+-  bumpmap:
+-    convertToNormalMap: 0
+-    externalNormalMap: 0
+-    heightScale: 0.25
+-    normalMapFilter: 0
+-    flipGreenChannel: 0
+-  isReadable: 0
+-  streamingMipmaps: 0
+-  streamingMipmapsPriority: 0
+-  vTOnly: 0
+-  ignoreMipmapLimit: 0
+-  grayScaleToAlpha: 0
+-  generateCubemap: 6
+-  cubemapConvolution: 0
+-  seamlessCubemap: 0
+-  textureFormat: 1
+-  maxTextureSize: 2048
+-  textureSettings:
+-    serializedVersion: 2
+-    filterMode: 1
+-    aniso: 1
+-    mipBias: 0
+-    wrapU: 1
+-    wrapV: 1
+-    wrapW: 1
+-  nPOTScale: 0
+-  lightmap: 0
+-  compressionQuality: 50
+-  spriteMode: 2
+-  spriteExtrude: 1
+-  spriteMeshType: 1
+-  alignment: 0
+-  spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+-  spriteGenerateFallbackPhysicsShape: 1
+-  alphaUsage: 1
+-  alphaIsTransparency: 1
+-  spriteTessellationDetail: -1
+-  textureType: 8
+-  textureShape: 1
+-  singleChannelComponent: 0
+-  flipbookRows: 1
+-  flipbookColumns: 1
+-  maxTextureSizeSet: 0
+-  compressionQualitySet: 0
+-  textureFormatSet: 0
+-  ignorePngGamma: 0
+-  applyGammaDecoding: 0
+-  swizzle: 50462976
+-  cookieLightType: 0
+-  platformSettings:
+-  - serializedVersion: 4
+-    buildTarget: DefaultTexturePlatform
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 4
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  spriteSheet:
+-    serializedVersion: 2
+-    sprites:
+-    - serializedVersion: 2
+-      name: PulsePlaceholder_0
+-      rect:
+-        serializedVersion: 2
+-        x: 0
+-        y: 0
+-        width: 394
+-        height: 448
+-      alignment: 0
+-      pivot: {x: 0, y: 0}
+-      border: {x: 0, y: 0, z: 0, w: 0}
+-      customData: 
+-      outline: []
+-      physicsShape: []
+-      tessellationDetail: -1
+-      bones: []
+-      spriteID: 711fbc52dc5407e00800000000000000
+-      internalID: 1040408261327319319
+-      vertices: []
+-      indices: 
+-      edges: []
+-      weights: []
+-    outline: []
+-    customData: 
+-    physicsShape: []
+-    bones: []
+-    spriteID: 
+-    internalID: 0
+-    vertices: []
+-    indices: 
+-    edges: []
+-    weights: []
+-    secondaryTextures: []
+-    spriteCustomMetadata:
+-      entries: []
+-    nameFileIdTable:
+-      PulsePlaceholder_0: 1040408261327319319
+-  mipmapLimitGroupName: 
+-  pSDRemoveMatte: 0
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"327b6e85-3c54-4070-aaeb-5cf9f2e2524e\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/projectSettingsUpdater.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/projectSettingsUpdater.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"cshaffer47\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/kathrynbergen/PlanetaryPostage2.git\",\n    \"accountId\": \"278bb42f-09c6-4c91-ae6e-3aaaf4f6a59f\"\n  }\n}]]></component>\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 3\n}]]></component>\n  <component name=\"ProjectId\" id=\"36Lwaut2sN7TaKhw0LkSWnapPuv\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"327b6e85-3c54-4070-aaeb-5cf9f2e2524e\" name=\"Changes\" comment=\"\" />\n      <created>1764799226793</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1764799226793</updated>\n      <workItem from=\"1764799227941\" duration=\"7000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\n  <component name=\"UnityProjectDiscoverer\">\n    <option name=\"unityProjectFolder\" value=\"true\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.OperationCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.OperationCanceledException\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.Threading.Tasks.TaskCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.Tasks.TaskCanceledException\" />\n          <option name=\"timeStamp\" value=\"2\" />\n        </breakpoint>\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\n          <properties exception=\"System.Threading.ThreadAbortException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.ThreadAbortException\" />\n          <option name=\"timeStamp\" value=\"3\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ b/.idea/workspace.xml	(date 1764809395123)
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="327b6e85-3c54-4070-aaeb-5cf9f2e2524e" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="327b6e85-3c54-4070-aaeb-5cf9f2e2524e" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -12,22 +10,22 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "cshaffer47"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;cshaffer47&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="GithubPullRequestsUISettings"><![CDATA[{
+   "selectedUrlAndAccountId": {
+     "url": "https://github.com/kathrynbergen/PlanetaryPostage2.git",
+-    "accountId": "278bb42f-09c6-4c91-ae6e-3aaaf4f6a59f"
++    "accountId": "bd90d891-2a3b-472f-bdd9-627adadda58e"
+   }
+ }]]></component>
+   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 3
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 3
++}</component>
+   <component name="ProjectId" id="36Lwaut2sN7TaKhw0LkSWnapPuv" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -38,9 +36,11 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "git-widget-placeholder": "master",
++    "nodejs_package_manager_path": "npm",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="327b6e85-3c54-4070-aaeb-5cf9f2e2524e" name="Changes" comment="" />
+@@ -49,6 +49,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1764799226793</updated>
+       <workItem from="1764799227941" duration="7000" />
++      <workItem from="1764809392223" duration="3000" />
+     </task>
+     <servers />
+   </component>
+@@ -74,22 +75,4 @@
+   <component name="VcsManagerConfiguration">
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+-          <option name="timeStamp" value="1" />
+-        </breakpoint>
+-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+-          <option name="timeStamp" value="2" />
+-        </breakpoint>
+-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+-          <option name="timeStamp" value="3" />
+-        </breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+ </project>
+\ No newline at end of file
+Index: Assets/Scenes/SampleScene.unity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n--- !u!29 &1\nOcclusionCullingSettings:\n  m_ObjectHideFlags: 0\n  serializedVersion: 2\n  m_OcclusionBakeSettings:\n    smallestOccluder: 5\n    smallestHole: 0.25\n    backfaceThreshold: 100\n  m_SceneGUID: 00000000000000000000000000000000\n  m_OcclusionCullingData: {fileID: 0}\n--- !u!104 &2\nRenderSettings:\n  m_ObjectHideFlags: 0\n  serializedVersion: 10\n  m_Fog: 0\n  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}\n  m_FogMode: 3\n  m_FogDensity: 0.01\n  m_LinearFogStart: 0\n  m_LinearFogEnd: 300\n  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}\n  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}\n  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}\n  m_AmbientIntensity: 1\n  m_AmbientMode: 3\n  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}\n  m_SkyboxMaterial: {fileID: 0}\n  m_HaloStrength: 0.5\n  m_FlareStrength: 1\n  m_FlareFadeSpeed: 3\n  m_HaloTexture: {fileID: 0}\n  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}\n  m_DefaultReflectionMode: 0\n  m_DefaultReflectionResolution: 128\n  m_ReflectionBounces: 1\n  m_ReflectionIntensity: 1\n  m_CustomReflection: {fileID: 0}\n  m_Sun: {fileID: 0}\n  m_UseRadianceAmbientProbe: 0\n--- !u!157 &3\nLightmapSettings:\n  m_ObjectHideFlags: 0\n  serializedVersion: 13\n  m_BakeOnSceneLoad: 0\n  m_GISettings:\n    serializedVersion: 2\n    m_BounceScale: 1\n    m_IndirectOutputScale: 1\n    m_AlbedoBoost: 1\n    m_EnvironmentLightingMode: 0\n    m_EnableBakedLightmaps: 0\n    m_EnableRealtimeLightmaps: 0\n  m_LightmapEditorSettings:\n    serializedVersion: 12\n    m_Resolution: 2\n    m_BakeResolution: 40\n    m_AtlasSize: 1024\n    m_AO: 0\n    m_AOMaxDistance: 1\n    m_CompAOExponent: 1\n    m_CompAOExponentDirect: 0\n    m_ExtractAmbientOcclusion: 0\n    m_Padding: 2\n    m_LightmapParameters: {fileID: 0}\n    m_LightmapsBakeMode: 1\n    m_TextureCompression: 1\n    m_ReflectionCompression: 2\n    m_MixedBakeMode: 2\n    m_BakeBackend: 1\n    m_PVRSampling: 1\n    m_PVRDirectSampleCount: 32\n    m_PVRSampleCount: 512\n    m_PVRBounces: 2\n    m_PVREnvironmentSampleCount: 256\n    m_PVREnvironmentReferencePointCount: 2048\n    m_PVRFilteringMode: 1\n    m_PVRDenoiserTypeDirect: 1\n    m_PVRDenoiserTypeIndirect: 1\n    m_PVRDenoiserTypeAO: 1\n    m_PVRFilterTypeDirect: 0\n    m_PVRFilterTypeIndirect: 0\n    m_PVRFilterTypeAO: 0\n    m_PVREnvironmentMIS: 1\n    m_PVRCulling: 1\n    m_PVRFilteringGaussRadiusDirect: 1\n    m_PVRFilteringGaussRadiusIndirect: 5\n    m_PVRFilteringGaussRadiusAO: 2\n    m_PVRFilteringAtrousPositionSigmaDirect: 0.5\n    m_PVRFilteringAtrousPositionSigmaIndirect: 2\n    m_PVRFilteringAtrousPositionSigmaAO: 1\n    m_ExportTrainingData: 0\n    m_TrainingDataDestination: TrainingData\n    m_LightProbeSampleCountMultiplier: 4\n  m_LightingDataAsset: {fileID: 0}\n  m_LightingSettings: {fileID: 0}\n--- !u!196 &4\nNavMeshSettings:\n  serializedVersion: 2\n  m_ObjectHideFlags: 0\n  m_BuildSettings:\n    serializedVersion: 3\n    agentTypeID: 0\n    agentRadius: 0.5\n    agentHeight: 2\n    agentSlope: 45\n    agentClimb: 0.4\n    ledgeDropHeight: 0\n    maxJumpAcrossDistance: 0\n    minRegionArea: 2\n    manualCellSize: 0\n    cellSize: 0.16666667\n    manualTileSize: 0\n    tileSize: 256\n    buildHeightMesh: 0\n    maxJobWorkers: 0\n    preserveTilesOutsideBounds: 0\n    debug:\n      m_Flags: 0\n  m_NavMeshData: {fileID: 0}\n--- !u!1 &35979249\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 35979250}\n  - component: {fileID: 35979252}\n  - component: {fileID: 35979251}\n  - component: {fileID: 35979253}\n  m_Layer: 5\n  m_Name: Panel-StartMenu\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &35979250\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 35979249}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 1\n  m_Children:\n  - {fileID: 2003663354}\n  - {fileID: 1620604096}\n  - {fileID: 719035738}\n  - {fileID: 1627680424}\n  m_Father: {fileID: 1892641457}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0.5, y: 0.5}\n  m_AnchorMax: {x: 0.5, y: 0.5}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 1920, y: 1080}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &35979251\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 35979249}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image\n  m_Material: {fileID: 0}\n  m_Color: {r: 1, g: 1, b: 1, a: 0.392}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}\n  m_Type: 1\n  m_PreserveAspect: 0\n  m_FillCenter: 1\n  m_FillMethod: 4\n  m_FillAmount: 1\n  m_FillClockwise: 1\n  m_FillOrigin: 0\n  m_UseSpriteMesh: 0\n  m_PixelsPerUnitMultiplier: 1\n--- !u!222 &35979252\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 35979249}\n  m_CullTransparentMesh: 1\n--- !u!225 &35979253\nCanvasGroup:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 35979249}\n  m_Enabled: 1\n  m_Alpha: 1\n  m_Interactable: 1\n  m_BlocksRaycasts: 1\n  m_IgnoreParentGroups: 0\n--- !u!1 &519420028\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 519420032}\n  - component: {fileID: 519420031}\n  - component: {fileID: 519420029}\n  - component: {fileID: 519420030}\n  m_Layer: 0\n  m_Name: Main Camera\n  m_TagString: MainCamera\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!81 &519420029\nAudioListener:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 519420028}\n  m_Enabled: 1\n--- !u!114 &519420030\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 519420028}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: \n  m_RenderShadows: 1\n  m_RequiresDepthTextureOption: 2\n  m_RequiresOpaqueTextureOption: 2\n  m_CameraType: 0\n  m_Cameras: []\n  m_RendererIndex: -1\n  m_VolumeLayerMask:\n    serializedVersion: 2\n    m_Bits: 1\n  m_VolumeTrigger: {fileID: 0}\n  m_VolumeFrameworkUpdateModeOption: 2\n  m_RenderPostProcessing: 0\n  m_Antialiasing: 0\n  m_AntialiasingQuality: 2\n  m_StopNaN: 0\n  m_Dithering: 0\n  m_ClearDepth: 1\n  m_AllowXRRendering: 1\n  m_AllowHDROutput: 1\n  m_UseScreenCoordOverride: 0\n  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}\n  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}\n  m_RequiresDepthTexture: 0\n  m_RequiresColorTexture: 0\n  m_TaaSettings:\n    m_Quality: 3\n    m_FrameInfluence: 0.1\n    m_JitterScale: 1\n    m_MipBias: 0\n    m_VarianceClampScale: 0.9\n    m_ContrastAdaptiveSharpening: 0\n  m_Version: 2\n--- !u!20 &519420031\nCamera:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 519420028}\n  m_Enabled: 1\n  serializedVersion: 2\n  m_ClearFlags: 2\n  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}\n  m_projectionMatrixMode: 1\n  m_GateFitMode: 2\n  m_FOVAxisMode: 0\n  m_Iso: 200\n  m_ShutterSpeed: 0.005\n  m_Aperture: 16\n  m_FocusDistance: 10\n  m_FocalLength: 50\n  m_BladeCount: 5\n  m_Curvature: {x: 2, y: 11}\n  m_BarrelClipping: 0.25\n  m_Anamorphism: 0\n  m_SensorSize: {x: 36, y: 24}\n  m_LensShift: {x: 0, y: 0}\n  m_NormalizedViewPortRect:\n    serializedVersion: 2\n    x: 0\n    y: 0\n    width: 1\n    height: 1\n  near clip plane: 0.3\n  far clip plane: 1000\n  field of view: 34\n  orthographic: 1\n  orthographic size: 5\n  m_Depth: -1\n  m_CullingMask:\n    serializedVersion: 2\n    m_Bits: 4294967295\n  m_RenderingPath: -1\n  m_TargetTexture: {fileID: 0}\n  m_TargetDisplay: 0\n  m_TargetEye: 0\n  m_HDR: 1\n  m_AllowMSAA: 0\n  m_AllowDynamicResolution: 0\n  m_ForceIntoRT: 0\n  m_OcclusionCulling: 0\n  m_StereoConvergence: 10\n  m_StereoSeparation: 0.022\n--- !u!4 &519420032\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 519420028}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: -10}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!1 &581650203\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 581650204}\n  - component: {fileID: 581650206}\n  - component: {fileID: 581650205}\n  m_Layer: 5\n  m_Name: Text (Legacy)\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &581650204\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 581650203}\n  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 1620604096}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0, y: 0}\n  m_AnchorMax: {x: 1, y: 1}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 0, y: 0}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &581650205\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 581650203}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text\n  m_Material: {fileID: 0}\n  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_FontData:\n    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}\n    m_FontSize: 40\n    m_FontStyle: 0\n    m_BestFit: 0\n    m_MinSize: 0\n    m_MaxSize: 40\n    m_Alignment: 4\n    m_AlignByGeometry: 0\n    m_RichText: 1\n    m_HorizontalOverflow: 0\n    m_VerticalOverflow: 0\n    m_LineSpacing: 1\n  m_Text: Level One\n--- !u!222 &581650206\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 581650203}\n  m_CullTransparentMesh: 1\n--- !u!1 &619394800\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 619394802}\n  - component: {fileID: 619394801}\n  m_Layer: 0\n  m_Name: Global Light 2D\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &619394801\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 619394800}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: \n  m_ComponentVersion: 2\n  m_LightType: 4\n  m_BlendStyleIndex: 0\n  m_FalloffIntensity: 0.5\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\n  m_Intensity: 1\n  m_LightVolumeIntensity: 1\n  m_LightVolumeEnabled: 0\n  m_ApplyToSortingLayers: 00000000\n  m_LightCookieSprite: {fileID: 0}\n  m_DeprecatedPointLightCookieSprite: {fileID: 0}\n  m_LightOrder: 0\n  m_AlphaBlendOnOverlap: 0\n  m_OverlapOperation: 0\n  m_NormalMapDistance: 3\n  m_NormalMapQuality: 2\n  m_UseNormalMap: 0\n  m_ShadowsEnabled: 0\n  m_ShadowIntensity: 0.75\n  m_ShadowSoftness: 0\n  m_ShadowSoftnessFalloffIntensity: 0.5\n  m_ShadowVolumeIntensityEnabled: 0\n  m_ShadowVolumeIntensity: 0.75\n  m_LocalBounds:\n    m_Center: {x: 0, y: -0.00000011920929, z: 0}\n    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}\n  m_PointLightInnerAngle: 360\n  m_PointLightOuterAngle: 360\n  m_PointLightInnerRadius: 0\n  m_PointLightOuterRadius: 1\n  m_ShapeLightParametricSides: 5\n  m_ShapeLightParametricAngleOffset: 0\n  m_ShapeLightParametricRadius: 1\n  m_ShapeLightFalloffSize: 0.5\n  m_ShapeLightFalloffOffset: {x: 0, y: 0}\n  m_ShapePath:\n  - {x: -0.5, y: -0.5, z: 0}\n  - {x: 0.5, y: -0.5, z: 0}\n  - {x: 0.5, y: 0.5, z: 0}\n  - {x: -0.5, y: 0.5, z: 0}\n--- !u!4 &619394802\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 619394800}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!1 &642107310\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 642107311}\n  - component: {fileID: 642107313}\n  - component: {fileID: 642107312}\n  m_Layer: 5\n  m_Name: Text (Legacy)\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &642107311\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 642107310}\n  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 1627680424}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0, y: 0}\n  m_AnchorMax: {x: 1, y: 1}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 0, y: 0}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &642107312\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 642107310}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text\n  m_Material: {fileID: 0}\n  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_FontData:\n    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}\n    m_FontSize: 40\n    m_FontStyle: 0\n    m_BestFit: 0\n    m_MinSize: 0\n    m_MaxSize: 40\n    m_Alignment: 4\n    m_AlignByGeometry: 0\n    m_RichText: 1\n    m_HorizontalOverflow: 0\n    m_VerticalOverflow: 0\n    m_LineSpacing: 1\n  m_Text: Level Three\n--- !u!222 &642107313\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 642107310}\n  m_CullTransparentMesh: 1\n--- !u!1 &719035737\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 719035738}\n  - component: {fileID: 719035741}\n  - component: {fileID: 719035740}\n  - component: {fileID: 719035739}\n  m_Layer: 5\n  m_Name: Button-LevelTwo\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &719035738\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 719035737}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children:\n  - {fileID: 1299923751}\n  m_Father: {fileID: 35979250}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0.5, y: 0.5}\n  m_AnchorMax: {x: 0.5, y: 0.5}\n  m_AnchoredPosition: {x: 0, y: -150}\n  m_SizeDelta: {x: 440, y: 90}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &719035739\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 719035737}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button\n  m_Navigation:\n    m_Mode: 3\n    m_WrapAround: 0\n    m_SelectOnUp: {fileID: 0}\n    m_SelectOnDown: {fileID: 0}\n    m_SelectOnLeft: {fileID: 0}\n    m_SelectOnRight: {fileID: 0}\n  m_Transition: 1\n  m_Colors:\n    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}\n    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}\n    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}\n    m_ColorMultiplier: 1\n    m_FadeDuration: 0.1\n  m_SpriteState:\n    m_HighlightedSprite: {fileID: 0}\n    m_PressedSprite: {fileID: 0}\n    m_SelectedSprite: {fileID: 0}\n    m_DisabledSprite: {fileID: 0}\n  m_AnimationTriggers:\n    m_NormalTrigger: Normal\n    m_HighlightedTrigger: Highlighted\n    m_PressedTrigger: Pressed\n    m_SelectedTrigger: Selected\n    m_DisabledTrigger: Disabled\n  m_Interactable: 1\n  m_TargetGraphic: {fileID: 719035740}\n  m_OnClick:\n    m_PersistentCalls:\n      m_Calls:\n      - m_Target: {fileID: 1318248512}\n        m_TargetAssemblyTypeName: Game, Assembly-CSharp\n        m_MethodName: OnStartLevelTwoButtonClicked\n        m_Mode: 1\n        m_Arguments:\n          m_ObjectArgument: {fileID: 0}\n          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine\n          m_IntArgument: 0\n          m_FloatArgument: 0\n          m_StringArgument: \n          m_BoolArgument: 0\n        m_CallState: 2\n--- !u!114 &719035740\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 719035737}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image\n  m_Material: {fileID: 0}\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}\n  m_Type: 1\n  m_PreserveAspect: 0\n  m_FillCenter: 1\n  m_FillMethod: 4\n  m_FillAmount: 1\n  m_FillClockwise: 1\n  m_FillOrigin: 0\n  m_UseSpriteMesh: 0\n  m_PixelsPerUnitMultiplier: 1\n--- !u!222 &719035741\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 719035737}\n  m_CullTransparentMesh: 1\n--- !u!1 &1024364045\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1024364047}\n  - component: {fileID: 1024364046}\n  m_Layer: 0\n  m_Name: UI\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &1024364046\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1024364045}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 3e2ce25ed5eb3464eb682088d9f3981e, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Assembly-CSharp::UI\n  StartScreenCanvasGroup: {fileID: 35979253}\n--- !u!4 &1024364047\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1024364045}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 960, y: 540, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!1 &1299923750\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1299923751}\n  - component: {fileID: 1299923753}\n  - component: {fileID: 1299923752}\n  m_Layer: 5\n  m_Name: Text (Legacy)\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &1299923751\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1299923750}\n  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 719035738}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0, y: 0}\n  m_AnchorMax: {x: 1, y: 1}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 0, y: 0}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &1299923752\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1299923750}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text\n  m_Material: {fileID: 0}\n  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_FontData:\n    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}\n    m_FontSize: 40\n    m_FontStyle: 0\n    m_BestFit: 0\n    m_MinSize: 0\n    m_MaxSize: 40\n    m_Alignment: 4\n    m_AlignByGeometry: 0\n    m_RichText: 1\n    m_HorizontalOverflow: 0\n    m_VerticalOverflow: 0\n    m_LineSpacing: 1\n  m_Text: Level Two\n--- !u!222 &1299923753\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1299923750}\n  m_CullTransparentMesh: 1\n--- !u!1 &1318248511\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1318248513}\n  - component: {fileID: 1318248512}\n  m_Layer: 0\n  m_Name: Game\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &1318248512\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1318248511}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: ffbffbc19394b8842be9394061e9a51f, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Assembly-CSharp::Game\n  UI: {fileID: 1024364046}\n  AsteroidPlacer: {fileID: 1797540268}\n  AlienBasicPlacer: {fileID: 1797540270}\n  AlienShooterPlacer: {fileID: 1797540271}\n--- !u!4 &1318248513\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1318248511}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 960, y: 540, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!1 &1509860417\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1509860420}\n  - component: {fileID: 1509860419}\n  - component: {fileID: 1509860418}\n  m_Layer: 0\n  m_Name: EventSystem\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &1509860418\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1509860417}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule\n  m_SendPointerHoverToParent: 1\n  m_MoveRepeatDelay: 0.5\n  m_MoveRepeatRate: 0.1\n  m_XRTrackingOrigin: {fileID: 0}\n  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}\n  m_DeselectOnBackgroundClick: 1\n  m_PointerBehavior: 0\n  m_CursorLockBehavior: 0\n  m_ScrollDeltaPerTick: 6\n--- !u!114 &1509860419\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1509860417}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem\n  m_FirstSelected: {fileID: 0}\n  m_sendNavigationEvents: 1\n  m_DragThreshold: 10\n--- !u!4 &1509860420\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1509860417}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!1 &1620604095\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1620604096}\n  - component: {fileID: 1620604099}\n  - component: {fileID: 1620604098}\n  - component: {fileID: 1620604097}\n  m_Layer: 5\n  m_Name: Button-LevelOne\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &1620604096\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1620604095}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children:\n  - {fileID: 581650204}\n  m_Father: {fileID: 35979250}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0.5, y: 0.5}\n  m_AnchorMax: {x: 0.5, y: 0.5}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 440, y: 90}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &1620604097\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1620604095}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button\n  m_Navigation:\n    m_Mode: 3\n    m_WrapAround: 0\n    m_SelectOnUp: {fileID: 0}\n    m_SelectOnDown: {fileID: 0}\n    m_SelectOnLeft: {fileID: 0}\n    m_SelectOnRight: {fileID: 0}\n  m_Transition: 1\n  m_Colors:\n    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}\n    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}\n    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}\n    m_ColorMultiplier: 1\n    m_FadeDuration: 0.1\n  m_SpriteState:\n    m_HighlightedSprite: {fileID: 0}\n    m_PressedSprite: {fileID: 0}\n    m_SelectedSprite: {fileID: 0}\n    m_DisabledSprite: {fileID: 0}\n  m_AnimationTriggers:\n    m_NormalTrigger: Normal\n    m_HighlightedTrigger: Highlighted\n    m_PressedTrigger: Pressed\n    m_SelectedTrigger: Selected\n    m_DisabledTrigger: Disabled\n  m_Interactable: 1\n  m_TargetGraphic: {fileID: 1620604098}\n  m_OnClick:\n    m_PersistentCalls:\n      m_Calls:\n      - m_Target: {fileID: 1318248512}\n        m_TargetAssemblyTypeName: Game, Assembly-CSharp\n        m_MethodName: OnStartLevelOneButtonClicked\n        m_Mode: 1\n        m_Arguments:\n          m_ObjectArgument: {fileID: 0}\n          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine\n          m_IntArgument: 0\n          m_FloatArgument: 0\n          m_StringArgument: \n          m_BoolArgument: 0\n        m_CallState: 2\n--- !u!114 &1620604098\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1620604095}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image\n  m_Material: {fileID: 0}\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}\n  m_Type: 1\n  m_PreserveAspect: 0\n  m_FillCenter: 1\n  m_FillMethod: 4\n  m_FillAmount: 1\n  m_FillClockwise: 1\n  m_FillOrigin: 0\n  m_UseSpriteMesh: 0\n  m_PixelsPerUnitMultiplier: 1\n--- !u!222 &1620604099\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1620604095}\n  m_CullTransparentMesh: 1\n--- !u!1 &1627680423\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1627680424}\n  - component: {fileID: 1627680427}\n  - component: {fileID: 1627680426}\n  - component: {fileID: 1627680425}\n  m_Layer: 5\n  m_Name: Button-LevelThree\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &1627680424\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1627680423}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children:\n  - {fileID: 642107311}\n  m_Father: {fileID: 35979250}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0.5, y: 0.5}\n  m_AnchorMax: {x: 0.5, y: 0.5}\n  m_AnchoredPosition: {x: 0, y: -300}\n  m_SizeDelta: {x: 440, y: 90}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &1627680425\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1627680423}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button\n  m_Navigation:\n    m_Mode: 3\n    m_WrapAround: 0\n    m_SelectOnUp: {fileID: 0}\n    m_SelectOnDown: {fileID: 0}\n    m_SelectOnLeft: {fileID: 0}\n    m_SelectOnRight: {fileID: 0}\n  m_Transition: 1\n  m_Colors:\n    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}\n    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}\n    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}\n    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}\n    m_ColorMultiplier: 1\n    m_FadeDuration: 0.1\n  m_SpriteState:\n    m_HighlightedSprite: {fileID: 0}\n    m_PressedSprite: {fileID: 0}\n    m_SelectedSprite: {fileID: 0}\n    m_DisabledSprite: {fileID: 0}\n  m_AnimationTriggers:\n    m_NormalTrigger: Normal\n    m_HighlightedTrigger: Highlighted\n    m_PressedTrigger: Pressed\n    m_SelectedTrigger: Selected\n    m_DisabledTrigger: Disabled\n  m_Interactable: 1\n  m_TargetGraphic: {fileID: 1627680426}\n  m_OnClick:\n    m_PersistentCalls:\n      m_Calls:\n      - m_Target: {fileID: 1318248512}\n        m_TargetAssemblyTypeName: Game, Assembly-CSharp\n        m_MethodName: OnStartLevelThreeButtonClicked\n        m_Mode: 1\n        m_Arguments:\n          m_ObjectArgument: {fileID: 0}\n          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine\n          m_IntArgument: 0\n          m_FloatArgument: 0\n          m_StringArgument: \n          m_BoolArgument: 0\n        m_CallState: 2\n--- !u!114 &1627680426\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1627680423}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image\n  m_Material: {fileID: 0}\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}\n  m_Type: 1\n  m_PreserveAspect: 0\n  m_FillCenter: 1\n  m_FillMethod: 4\n  m_FillAmount: 1\n  m_FillClockwise: 1\n  m_FillOrigin: 0\n  m_UseSpriteMesh: 0\n  m_PixelsPerUnitMultiplier: 1\n--- !u!222 &1627680427\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1627680423}\n  m_CullTransparentMesh: 1\n--- !u!1 &1797540267\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1797540269}\n  - component: {fileID: 1797540268}\n  - component: {fileID: 1797540270}\n  - component: {fileID: 1797540271}\n  m_Layer: 0\n  m_Name: Placers\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &1797540268\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1797540267}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 1517080f02abbee45872d124ad08cf45, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Assembly-CSharp::AsteroidPlacer\n  ObstaclePrefab: {fileID: 4609301563515464140, guid: 8ab6ddae10097394783c5018319fe8a2, type: 3}\n  minimumSecondsUntilSpawn: 1\n  maximumSecondsUntilSpawn: 3\n--- !u!4 &1797540269\nTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1797540267}\n  serializedVersion: 2\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0.83931, y: 2.48, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n--- !u!114 &1797540270\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1797540267}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 582d92297037d3f47b8a5df45b06ef76, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Assembly-CSharp::AlienBasicPlacer\n  ObstaclePrefab: {fileID: 93497228326777471, guid: 5a192a95c40f4064ab47d8cfdd28510c, type: 3}\n  minimumSecondsUntilSpawn: 1\n  maximumSecondsUntilSpawn: 3\n--- !u!114 &1797540271\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1797540267}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: bf426be0ee0885c4ba8aaa737daa1a2c, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: Assembly-CSharp::AlienShooterPlacer\n  ObstaclePrefab: {fileID: 4913151162848238925, guid: 687c5b3d007932f48accf01a168a4bbd, type: 3}\n  minimumSecondsUntilSpawn: 1\n  maximumSecondsUntilSpawn: 3\n--- !u!1 &1892641453\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 1892641457}\n  - component: {fileID: 1892641456}\n  - component: {fileID: 1892641455}\n  - component: {fileID: 1892641454}\n  m_Layer: 5\n  m_Name: Canvas\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!114 &1892641454\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1892641453}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster\n  m_IgnoreReversedGraphics: 1\n  m_BlockingObjects: 0\n  m_BlockingMask:\n    serializedVersion: 2\n    m_Bits: 4294967295\n--- !u!114 &1892641455\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1892641453}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler\n  m_UiScaleMode: 0\n  m_ReferencePixelsPerUnit: 100\n  m_ScaleFactor: 1\n  m_ReferenceResolution: {x: 800, y: 600}\n  m_ScreenMatchMode: 0\n  m_MatchWidthOrHeight: 0\n  m_PhysicalUnit: 3\n  m_FallbackScreenDPI: 96\n  m_DefaultSpriteDPI: 96\n  m_DynamicPixelsPerUnit: 1\n  m_PresetInfoIsWorld: 0\n--- !u!223 &1892641456\nCanvas:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1892641453}\n  m_Enabled: 1\n  serializedVersion: 3\n  m_RenderMode: 0\n  m_Camera: {fileID: 0}\n  m_PlaneDistance: 100\n  m_PixelPerfect: 0\n  m_ReceivesEvents: 1\n  m_OverrideSorting: 0\n  m_OverridePixelPerfect: 0\n  m_SortingBucketNormalizedSize: 0\n  m_VertexColorAlwaysGammaSpace: 0\n  m_AdditionalShaderChannelsFlag: 0\n  m_UpdateRectTransformForStandalone: 0\n  m_SortingLayerID: 0\n  m_SortingOrder: 0\n  m_TargetDisplay: 0\n--- !u!224 &1892641457\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 1892641453}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 0, y: 0, z: 0}\n  m_ConstrainProportionsScale: 0\n  m_Children:\n  - {fileID: 35979250}\n  m_Father: {fileID: 0}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0, y: 0}\n  m_AnchorMax: {x: 0, y: 0}\n  m_AnchoredPosition: {x: 0, y: 0}\n  m_SizeDelta: {x: 0, y: 0}\n  m_Pivot: {x: 0, y: 0}\n--- !u!1 &2003663353\nGameObject:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  serializedVersion: 6\n  m_Component:\n  - component: {fileID: 2003663354}\n  - component: {fileID: 2003663356}\n  - component: {fileID: 2003663355}\n  m_Layer: 5\n  m_Name: Text-Title\n  m_TagString: Untagged\n  m_Icon: {fileID: 0}\n  m_NavMeshLayer: 0\n  m_StaticEditorFlags: 0\n  m_IsActive: 1\n--- !u!224 &2003663354\nRectTransform:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 2003663353}\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\n  m_LocalPosition: {x: 0, y: 0, z: 0}\n  m_LocalScale: {x: 1, y: 1, z: 1}\n  m_ConstrainProportionsScale: 0\n  m_Children: []\n  m_Father: {fileID: 35979250}\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\n  m_AnchorMin: {x: 0.5, y: 0.5}\n  m_AnchorMax: {x: 0.5, y: 0.5}\n  m_AnchoredPosition: {x: 0, y: 125}\n  m_SizeDelta: {x: 650, y: 140}\n  m_Pivot: {x: 0.5, y: 0.5}\n--- !u!114 &2003663355\nMonoBehaviour:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 2003663353}\n  m_Enabled: 1\n  m_EditorHideFlags: 0\n  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}\n  m_Name: \n  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text\n  m_Material: {fileID: 0}\n  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}\n  m_RaycastTarget: 1\n  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}\n  m_Maskable: 1\n  m_OnCullStateChanged:\n    m_PersistentCalls:\n      m_Calls: []\n  m_FontData:\n    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}\n    m_FontSize: 75\n    m_FontStyle: 0\n    m_BestFit: 0\n    m_MinSize: 0\n    m_MaxSize: 104\n    m_Alignment: 1\n    m_AlignByGeometry: 0\n    m_RichText: 1\n    m_HorizontalOverflow: 1\n    m_VerticalOverflow: 1\n    m_LineSpacing: 1\n  m_Text: Planetary Postage\n--- !u!222 &2003663356\nCanvasRenderer:\n  m_ObjectHideFlags: 0\n  m_CorrespondingSourceObject: {fileID: 0}\n  m_PrefabInstance: {fileID: 0}\n  m_PrefabAsset: {fileID: 0}\n  m_GameObject: {fileID: 2003663353}\n  m_CullTransparentMesh: 1\n--- !u!1660057539 &9223372036854775807\nSceneRoots:\n  m_ObjectHideFlags: 0\n  m_Roots:\n  - {fileID: 519420032}\n  - {fileID: 619394802}\n  - {fileID: 1797540269}\n  - {fileID: 1892641457}\n  - {fileID: 1509860420}\n  - {fileID: 1318248513}\n  - {fileID: 1024364047}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/SampleScene.unity b/Assets/Scenes/SampleScene.unity
+--- a/Assets/Scenes/SampleScene.unity	(revision f2c894249b6ce2f00cdbcdebc79914a14740332a)
++++ b/Assets/Scenes/SampleScene.unity	(date 1764809858508)
+@@ -1274,6 +1274,7 @@
+   ObstaclePrefab: {fileID: 4609301563515464140, guid: 8ab6ddae10097394783c5018319fe8a2, type: 3}
+   minimumSecondsUntilSpawn: 1
+   maximumSecondsUntilSpawn: 3
++  IsOkToCreate: 0
+ --- !u!4 &1797540269
+ Transform:
+   m_ObjectHideFlags: 0
+@@ -1304,6 +1305,7 @@
+   ObstaclePrefab: {fileID: 93497228326777471, guid: 5a192a95c40f4064ab47d8cfdd28510c, type: 3}
+   minimumSecondsUntilSpawn: 1
+   maximumSecondsUntilSpawn: 3
++  IsOkToCreate: 0
+ --- !u!114 &1797540271
+ MonoBehaviour:
+   m_ObjectHideFlags: 0
+@@ -1319,6 +1321,7 @@
+   ObstaclePrefab: {fileID: 4913151162848238925, guid: 687c5b3d007932f48accf01a168a4bbd, type: 3}
+   minimumSecondsUntilSpawn: 1
+   maximumSecondsUntilSpawn: 3
++  IsOkToCreate: 0
+ --- !u!1 &1892641453
+ GameObject:
+   m_ObjectHideFlags: 0

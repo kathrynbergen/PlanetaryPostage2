@@ -1,9 +1,11 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Game : MonoBehaviour
 {
     public UI UI;
+    public LevelUI LevelUI;
     public AsteroidPlacer AsteroidPlacer;
     public AlienBasicPlacer AlienBasicPlacer;
     public  AlienShooterPlacer AlienShooterPlacer;
@@ -49,6 +51,8 @@ public class Game : MonoBehaviour
     }
     private void StartGame()
     {
+        ScoreKeeper.ResetScore();
+        LevelUI.SetScoreText(ScoreKeeper.GetScore());
         UI.StartGame();
         UpdateSpawnRates();
         EnableObstacles();
@@ -91,5 +95,10 @@ public class Game : MonoBehaviour
 
         GameParameters.AlienShooterMinimumSecondsUntilSpawn = alienShooterMin;
         GameParameters.AlienShooterMaximumSecondsUntilSpawn = alienShooterMax;
+    }
+
+    public void Update()
+    {
+        LevelUI.SetScoreText(ScoreKeeper.GetScore());
     }
 }
