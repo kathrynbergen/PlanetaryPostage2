@@ -1118,11 +1118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthDisplay
   Game: {fileID: 1318248512}
-  HealthSpriteRenderer: {fileID: 830825607}
-  EmptyHealthSprite: {fileID: -765187810910609461, guid: 31209e15be02840f09cae47ff9390633, type: 3}
-  OneHealthSprite: {fileID: 2045994070260232039, guid: e77880b7e884d449badb74e4654f98e5, type: 3}
-  TwoHealthSprite: {fileID: 6540464533205305539, guid: 6a1dd241e37794b78999965feb135098, type: 3}
-  ThreeHealthSprite: {fileID: -2637150370873066781, guid: c5a29bbc5aed44d88a8869a7ed7aaefd, type: 3}
+  UI: {fileID: 1024364046}
+  Health: 3
 --- !u!1 &1024364045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,8 +1149,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2ce25ed5eb3464eb682088d9f3981e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI
+  HealthDisplay: {fileID: 830825609}
   StartScreenCanvasGroup: {fileID: 35979253}
   GameOverCanvasGroup: {fileID: 1025191023}
+  HealthSpriteRenderer: {fileID: 830825607}
+  EmptyHealthSprite: {fileID: -765187810910609461, guid: 31209e15be02840f09cae47ff9390633, type: 3}
+  OneHealthSprite: {fileID: 2045994070260232039, guid: e77880b7e884d449badb74e4654f98e5, type: 3}
+  TwoHealthSprite: {fileID: 6540464533205305539, guid: 6a1dd241e37794b78999965feb135098, type: 3}
+  ThreeHealthSprite: {fileID: -2637150370873066781, guid: c5a29bbc5aed44d88a8869a7ed7aaefd, type: 3}
 --- !u!4 &1024364047
 Transform:
   m_ObjectHideFlags: 0
@@ -1581,6 +1584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game
   UI: {fileID: 1024364046}
+  HealthDisplay: {fileID: 830825609}
   AsteroidPlacer: {fileID: 1797540268}
   AlienBasicPlacer: {fileID: 1797540270}
   AlienShooterPlacer: {fileID: 1797540271}
@@ -1980,6 +1984,7 @@ MonoBehaviour:
   minimumSecondsUntilSpawn: 1
   maximumSecondsUntilSpawn: 3
   IsOkToCreate: 0
+  IsGameOver: 0
 --- !u!4 &1797540269
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,6 +2016,7 @@ MonoBehaviour:
   minimumSecondsUntilSpawn: 1
   maximumSecondsUntilSpawn: 3
   IsOkToCreate: 0
+  IsGameOver: 0
 --- !u!114 &1797540271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2027,6 +2033,7 @@ MonoBehaviour:
   minimumSecondsUntilSpawn: 1
   maximumSecondsUntilSpawn: 3
   IsOkToCreate: 0
+  IsGameOver: 0
 --- !u!1 &1892641453
 GameObject:
   m_ObjectHideFlags: 0
