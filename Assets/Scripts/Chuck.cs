@@ -14,6 +14,7 @@ public class Chuck : MonoBehaviour
    public Game Game;
    
    private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
+   private float Health = GameParameters.ChuckHealth;
   
    private bool isParrying = false;
    private bool isBoosting = false;
@@ -182,5 +183,28 @@ public class Chuck : MonoBehaviour
        yield return new WaitForSeconds(GameParameters.ChuckBoostDuration);
        canParry = true;
        ReturnToNormal();
+   }
+   
+   //COLLISION
+   public void OnTriggerEnter2D(Collider2D collision)
+   {
+       Debug.Log("OnTriggerEnter2D");
+       if (collision.gameObject.tag == "Obstacle")
+       {
+           if (isParrying)
+           {
+               Debug.Log("PARRY KILL");
+               Destroy(collision.gameObject);
+           }
+           else
+           {
+               TakeDamage();
+           }
+       }
+   }
+
+   public void TakeDamage()
+   {
+       Health--;
    }
 }

@@ -4,6 +4,7 @@ public static class GameParameters
 {
     //CHUCK
     public static float ChuckMoveSpeed = 5f;
+    public static float ChuckHealth = 3f;
     
     public static float ChuckPulseSpeed = 20f;
     public static float ChuckPulseDuration = 0.2f;
