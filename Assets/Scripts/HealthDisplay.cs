@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class HealthDisplay : MonoBehaviour
 {
+    public Game Game;
+    
     public SpriteRenderer HealthSpriteRenderer;
     
     public Sprite EmptyHealthSprite;
@@ -27,7 +29,9 @@ public class HealthDisplay : MonoBehaviour
         {
             Health--;
             HealthSpriteRenderer.sprite = EmptyHealthSprite;
+            Game.GameOver();
         }
+        
     }
 
     public void CheckIfDead(Collider2D Chuck)
@@ -35,6 +39,7 @@ public class HealthDisplay : MonoBehaviour
         if (Health == 0f)
         {
             Destroy(Chuck.gameObject);
+            
         }
     }
 }

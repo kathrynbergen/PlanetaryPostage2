@@ -10,6 +10,7 @@ public class ObstacleObjectPlacer : MonoBehaviour
     public float maximumSecondsUntilSpawn = 3f;
 
     public bool IsOkToCreate = false;
+    public bool IsGameOver = false;
     
     // bottom and top of screen bounds
     private float minimumY = -3.8f; 
@@ -32,7 +33,8 @@ public class ObstacleObjectPlacer : MonoBehaviour
     IEnumerator CountdownUntilCreation()
     {
         IsOkToCreate = false;
-        
+        if (IsGameOver) 
+            yield break;
         float secondsToWait = Random.Range(minimumSecondsUntilSpawn, maximumSecondsUntilSpawn);
         yield return new WaitForSeconds(secondsToWait);
         

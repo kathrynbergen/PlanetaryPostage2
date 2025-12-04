@@ -11,9 +11,8 @@ public class Game : MonoBehaviour
     
     public void Start()
     {
-        // disable player movement
-        //From cole: I think this is resolved? Lmk
         DisableObstacles();
+        UI.ReturnToMenu();
     }
     public void OnStartLevelOneButtonClicked()
     {
@@ -34,18 +33,41 @@ public class Game : MonoBehaviour
         StartGame();
     }
 
+    public void OnRestartButtonClicked()
+    {
+        StartGame();
+    }
+
+    public void OnReturnToMenuButtonClicked()
+    {
+        UI.ReturnToMenu();
+    }
+
+    public void GameOver()
+    {
+        DisablePlayerMovement();
+        DisableObstacles();
+        UI.GameOver();
+    }
+
     private void DisableObstacles()
     {
         AsteroidPlacer.IsOkToCreate = false;
+        AsteroidPlacer.IsGameOver = true;
         AlienBasicPlacer.IsOkToCreate = false;
+        AlienBasicPlacer.IsGameOver = true;
         AlienShooterPlacer.IsOkToCreate = false;
+        AlienShooterPlacer.IsGameOver = true;
     }
 
     private void EnableObstacles()
     {
         AsteroidPlacer.IsOkToCreate = true;
+        AsteroidPlacer.IsGameOver = false;
         AlienBasicPlacer.IsOkToCreate = true;
+        AlienBasicPlacer.IsGameOver = false;
         AlienShooterPlacer.IsOkToCreate = true;
+        AlienShooterPlacer.IsGameOver = false;
     }
     private void StartGame()
     {
@@ -53,11 +75,19 @@ public class Game : MonoBehaviour
         UpdateSpawnRates();
         EnableObstacles();
         EnablePlayerMovement();
+        // reset all values to initial
+        GameParameters.ChuckHealth = 3f;
+        // reset score to 0
     }
 
     private void EnablePlayerMovement()
     {
         IsPlaying = true;
+    }
+
+    private void DisablePlayerMovement()
+    {
+        IsPlaying = false;
     }
 
     private void UpdateSpawnRates()
