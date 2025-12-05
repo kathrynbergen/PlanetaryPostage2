@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
     public Sprite OneHealthSprite;
     public Sprite TwoHealthSprite;
     public Sprite ThreeHealthSprite;
+    
     public void StartGame()
     {
         CanvasGroupDisplayer.Hide(StartScreenCanvasGroup);

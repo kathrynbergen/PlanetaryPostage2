@@ -11,7 +11,9 @@ public static class GameParameters
     
     public static float ChuckParrySpeed = 0.32f;
     public static float ChuckParryDuration = 0.5f;
-    public static float ChuckParryCooldown = 5f;
+    public static float ChuckParryCooldownIntervalBetweenSpriteChange = 1f;
+    public static float ParryTextFlashInterval = 0.1f;
+    public static float ParryTextFlashIntervalLong = 1f;
     
     public static float ChuckBoostSpeed = 0.24f;
     public static float ChuckBoostDuration = 5f;

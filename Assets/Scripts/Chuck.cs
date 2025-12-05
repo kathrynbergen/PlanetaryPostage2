@@ -12,6 +12,8 @@ public class Chuck : MonoBehaviour
    public Sprite ShootSprite;
    
    public Game Game;
+   public HealthDisplay HP;
+   public UI_ParryCooldown ParryCooldownMeter;
    
    private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
    private float Health = GameParameters.ChuckHealth;
@@ -93,6 +95,8 @@ public class Chuck : MonoBehaviour
            isParrying = true;
            canBoost = false;
            Debug.Log("Parry!");
+           canParry = false;
+           ParryCooldownMeter.StartCooldown();
            StartCoroutine(ParryTimer());
        }
    }
@@ -104,18 +108,15 @@ public class Chuck : MonoBehaviour
        yield return new WaitForSeconds(GameParameters.ChuckParryDuration);
        ReturnFromParry();
    }
-
-   IEnumerator ParryCooldown()
-   {
-       Debug.Log("Cooldown Start");
-       yield return new WaitForSeconds(GameParameters.ChuckParryCooldown);
-       canParry = true;
-       Debug.Log("Cooldown Over");
-   }
    
    public bool getIsParrying()
    {
        return isParrying;
+   }
+
+   public void setCanParrying(bool canParry)
+   {
+       this.canParry = canParry;
    }
    
    private void ReturnFromParry()
@@ -124,8 +125,8 @@ public class Chuck : MonoBehaviour
        ChuckSpeed = GameParameters.ChuckMoveSpeed;
        canBoost = true;
        isParrying = false;
-       canParry = false;
-       StartCoroutine(ParryCooldown());
+
+       //ParryCooldownMeter.StartCooldown();
    }
   
    //CHANGING STATES
@@ -214,6 +215,7 @@ public class Chuck : MonoBehaviour
            else
            {
                TakeDamage();
+               HP.DecreaseHealth();
            }
        }
        

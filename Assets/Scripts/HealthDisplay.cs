@@ -11,19 +11,10 @@ public class HealthDisplay : MonoBehaviour
 
     public void DecreaseHealth()
     {
+        Debug.Log("Player took damage!");
         Health--;
         if (Health == 0f)
             Game.GameOver();
         UI.UpdateHealthDisplay();
-    }
-
-
-    public void CheckIfDead(Collider2D Chuck)
-    {
-        if (Health == 0f)
-        {
-            Destroy(Chuck.gameObject);
-          
-        }
     }
 }
