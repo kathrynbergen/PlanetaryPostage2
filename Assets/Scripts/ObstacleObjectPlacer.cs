@@ -13,8 +13,8 @@ public class ObstacleObjectPlacer : MonoBehaviour
     public bool IsGameOver = false;
     
     // bottom and top of screen bounds
-    private float minimumY = -3.8f; 
-    private float maximumY = 3.8f;
+    private float minimumY = -0.85f; 
+    private float maximumY = 0.25f;
     
     
     private static List<float> occupiedY = new List<float>();
@@ -50,7 +50,7 @@ public class ObstacleObjectPlacer : MonoBehaviour
         {
             float chosenY = Random.Range(minimumY, maximumY);
             
-            Vector2 boxSize = new Vector2(0.75f, 0.75f); // 1/2 size of obstacle width and height
+            Vector2 boxSize = new Vector2(0.75f, 0.75f); // 1/2 size of obstacle width and height -- check this
             Vector2 spawnPosition = new Vector2(10f, chosenY);
 
             Collider2D hit = Physics2D.OverlapBox(spawnPosition, boxSize, 0f);
@@ -68,7 +68,7 @@ public class ObstacleObjectPlacer : MonoBehaviour
 
     public void PlaceObstacle(float yLocation)
     {
-        GameObject newObstacle = Instantiate(ObstaclePrefab, new Vector2(10,yLocation), Quaternion.identity);
+        GameObject newObstacle = Instantiate(ObstaclePrefab, new Vector2(GameParameters.ObstacleXSpawnCoordinate,yLocation), Quaternion.identity);
         occupiedY.Add(yLocation);
     }
 }

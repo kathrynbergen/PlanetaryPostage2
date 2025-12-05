@@ -34,7 +34,7 @@ public class ObstacleObject : MonoBehaviour
 
     IEnumerator CountdownUntilShooting()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
         StartCoroutine(PrepareToShoot());
     }
 
@@ -61,7 +61,7 @@ public class ObstacleObject : MonoBehaviour
 
     IEnumerator CountdownUntilDestroyedOffScreen()
     {
-        yield return new WaitForSeconds(4f / Mathf.Abs(ObstacleSpeed));
+        yield return new WaitForSeconds(5f / Mathf.Abs(ObstacleSpeed));
         print("destroy!");
         Destroy(gameObject);
     }

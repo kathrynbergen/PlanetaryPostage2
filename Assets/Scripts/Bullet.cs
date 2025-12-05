@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float bulletSpeed = -1.5f;
     private SpriteRenderer BulletSpriteRenderer;
 
     public void Start()
@@ -13,11 +12,11 @@ public class Bullet : MonoBehaviour
     }
     public void Update()
     {
-        Move(new Vector2(bulletSpeed, 0f));
+        Move(new Vector2(GameParameters.BulletSpeed, 0f));
     }
     private void Move(Vector2 direction)
     {
-        float xAmount = direction.x * Mathf.Abs(bulletSpeed) * 5f * Time.deltaTime;
+        float xAmount = direction.x * Mathf.Abs(GameParameters.BulletSpeed) * 5f * Time.deltaTime;
         
         BulletSpriteRenderer.transform.Translate(xAmount, 0f, 0f);
     }
