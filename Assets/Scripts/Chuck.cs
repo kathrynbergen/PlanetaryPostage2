@@ -12,10 +12,10 @@ public class Chuck : MonoBehaviour
    public Sprite ShootSprite;
    
    public Game Game;
+   public ChuckAnimator ChuckAnimator;
    
    private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
    private float Health = GameParameters.ChuckHealth;
-   private Animator anim;
   
    private bool isParrying = false;
    private bool isBoosting = false;
@@ -25,11 +25,6 @@ public class Chuck : MonoBehaviour
    private bool canParry = true;
    private bool canBoost = true;
   
-   
-   void Start() // getting the animations
-   {
-       anim = GetComponent<Animator>();
-   }
    
    //MOVEMENT
    public void Move(Vector2 direction)
@@ -89,7 +84,7 @@ public class Chuck : MonoBehaviour
    {
        if (canParry && Game.IsPlaying)
        {
-           ChangeToParrySprite();
+           // ChangeToParrySprite();
            isParrying = true;
            canBoost = false;
            Debug.Log("Parry!");
@@ -143,36 +138,27 @@ public class Chuck : MonoBehaviour
    private void ChangeToParrySprite()
    {
        ChuckSpriteRenderer.sprite = ParrySprite;
-       // anim.SetTrigger("parry"); changes animation
    }
 
 
    private void ChangeToNormalSprite()
    {
        ChuckSpriteRenderer.sprite = NormalSprite;
-       //anim.ResetTrigger("parry");
-       // anim.ResetTrigger("boost");
-       // anim.ResetTrigger("pulse");
-       // anim.ResetTrigger("shoot");
-       // // Idle plays by default
    }
   
    private void ChangeToBoostSprite()
    {
        ChuckSpriteRenderer.sprite = BoostSprite;
-       //anim.SetTrigger("boost"); changes animation
    }
   
    private void ChangeToPulseSprite()
    {
        ChuckSpriteRenderer.sprite = PulseSprite;
-       //anim.SetTrigger("pulse");
    }
    
    private void ChangeToShootSprite()
    {
        ChuckSpriteRenderer.sprite = ShootSprite;
-       //anim.SetTrigger("shoot");
    }
 
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ecd74c3fa78247bf8b8f4d0491f2639
+guid: b40f2be327eae4c91b2e7e3d24536603
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -942295868066642717
-    second: Spaceship-B_0
+      213: 8652199419461204446
+    second: UI chuck emote-sad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spaceship-B_0
+      name: UI chuck emote-sad_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 36
-        height: 38
+        x: 1
+        y: 1
+        width: 96
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e4c19686ea4ce2f0800000000000000
-      internalID: -942295868066642717
+      spriteID: ed973dad789c21870800000000000000
+      internalID: 8652199419461204446
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spaceship-B_0: -942295868066642717
+      UI chuck emote-sad_0: 8652199419461204446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

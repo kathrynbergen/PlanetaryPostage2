@@ -28,4 +28,8 @@ public static class GameParameters
     public static float AlienShooterSpeed = -0.5f;
     public static float AlienShooterMinimumSecondsUntilSpawn = 2f;
     public static float AlienShooterMaximumSecondsUntilSpawn = 6f;
+    
+    // UI
+    public static float PlayerScore = 0f;
+    public static float BoostGauge = 0f; // player can collect a max of 5 boost feathers at a time
 }

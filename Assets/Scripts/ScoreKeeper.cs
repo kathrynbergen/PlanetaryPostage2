@@ -3,20 +3,22 @@ using UnityEngine;
 
 public static class ScoreKeeper
 {
-    private static int score = 0;
+    // Note: I am still trying to get the score to work    
+    
+    //private float Score = GameParameters.PlayerScore;
     
     public static void AddPoint()
     {
-        score++;
+        //Score++;
     }
     
     public static void ResetScore()
     {
-        score = 0;
+        //Score = 0;
     }
     
-    public static int GetScore()
+    public static void GetScore()
     {
-        return score;
+        //return Score;
     }
 }
