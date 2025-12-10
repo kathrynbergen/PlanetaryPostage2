@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6727037170831390238}
   - component: {fileID: 7758546550613779631}
   - component: {fileID: 3895737082550255846}
+  - component: {fileID: 1364454064687808057}
   m_Layer: 0
   m_Name: Spaceship-A
   m_TagString: Obstacle
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: e3ccdbb43ac08460fa45a63224cf9343, type: 3}
+  m_Sprite: {fileID: -8441352471532990209, guid: 6d659ce042cd045f8a22d3d7007c4ad9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -146,3 +147,25 @@ PolygonCollider2D:
       - {x: 0.50806475, y: -0.66986436}
       - {x: 0.44002256, y: 0.14819269}
   m_UseDelaunayMesh: 0
+--- !u!95 &1364454064687808057
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154153742762878372}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed1eae7ded4e54752b002bb6ebcc01f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

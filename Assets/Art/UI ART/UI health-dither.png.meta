@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 821ac79af461a425581b94d7fad91aef
+guid: 9a8bd5be50a5647878992d85a2d093e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6192457744271852371
-    second: Spaceship-C_0
+      213: -233885322291709217
+    second: UI health-dither_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spaceship-C_0
+      name: UI health-dither_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 58
-        height: 41
+        width: 105
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 353c0f5628700f550800000000000000
-      internalID: 6192457744271852371
+      spriteID: fdaff9ed98211ccf0800000000000000
+      internalID: -233885322291709217
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spaceship-C_0: 6192457744271852371
+      UI health-dither_0: -233885322291709217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
