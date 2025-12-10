@@ -5,10 +5,11 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
    public UI UI;
+   public UI_ProgressBar ProgressBar;
    public HealthDisplay HealthDisplay;
    public AsteroidPlacer AsteroidPlacer;
    public AlienBasicPlacer AlienBasicPlacer;
-   public  AlienShooterPlacer AlienShooterPlacer;
+   public AlienShooterPlacer AlienShooterPlacer;
    public bool IsPlaying = false;
   
    public void Start()
@@ -50,6 +51,7 @@ public class Game : MonoBehaviour
 
    public void GameOver()
    {
+       ProgressBar.StopMovement();
        DisablePlayerMovement();
        DisableObstacles();
        UI.GameOver();
@@ -82,6 +84,8 @@ public class Game : MonoBehaviour
        UpdateSpawnRates();
        EnableObstacles();
        EnablePlayerMovement();
+       ProgressBar.StartMovement();
+       
        // reset all values to initial
        ResetHealth();
        // reset score to 0
@@ -97,7 +101,6 @@ public class Game : MonoBehaviour
    {
        IsPlaying = true;
    }
-
 
    private void DisablePlayerMovement()
    {

@@ -865,6 +865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 596560415}
   - component: {fileID: 596560416}
+  - component: {fileID: 596560417}
   m_Layer: 0
   m_Name: UI Progress bar
   m_TagString: Untagged
@@ -947,6 +948,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &596560417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596560414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01f65ff9d0794703862f534676d2ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerProgressBar
+  ChuckIcon: {fileID: 621674513}
 --- !u!1 &606565413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 621674511}
   - component: {fileID: 621674512}
+  - component: {fileID: 621674513}
   m_Layer: 0
   m_Name: LeChuckPlaceholder
   m_TagString: Untagged
@@ -1153,6 +1168,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &621674513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621674510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a4c924aaee24f328915413a02e16c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProgressBarIcon
+  PBISpriteRenderer: {fileID: 621674512}
+  NormalSprite: {fileID: 21300000, guid: 0e5fb027a941a4b40983b42c5a9ee2e1, type: 3}
 --- !u!1 &642107310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,6 +2648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game
   UI: {fileID: 1024364046}
+  ProgressBar: {fileID: 596560417}
   HealthDisplay: {fileID: 1957384543}
   AsteroidPlacer: {fileID: 1797540268}
   AlienBasicPlacer: {fileID: 1797540270}

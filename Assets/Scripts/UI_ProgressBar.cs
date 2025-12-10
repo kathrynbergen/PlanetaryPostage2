@@ -1,16 +1,26 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class PlayerProgressBar : MonoBehaviour
+public class UI_ProgressBar : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public ProgressBarIcon ChuckIcon;
+    private bool canMove = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (canMove)
+        {
+            ChuckIcon.MoveOnBar();
+        }
+    }
+    
+    public void StartMovement()
+    {
+        canMove = true;
+    }
+    
+    public void StopMovement()
+    {
+        canMove = false;
     }
 }

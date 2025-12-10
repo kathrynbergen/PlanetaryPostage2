@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BoostingUI : MonoBehaviour
+public class UI_Boosting : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
