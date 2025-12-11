@@ -17,7 +17,7 @@ public static class GameParameters
     public static float TextFlashIntervalLong = 1f;
     
     public static float ChuckBoostSpeed = 0.24f;
-    public static float ChuckBoostDuration = 5f;
+    public static float ChuckBoostDuration = 7f;
 
     public static float ChuckShootingIconDuration = 3f;
     public static float ChuckDamageIconDuration = 1f;
@@ -27,7 +27,7 @@ public static class GameParameters
     public static float AsteroidMinimumSecondsUntilSpawn = 1f;
     public static float AsteroidMaximumSecondsUntilSpawn = 3f;
     
-    public static float AlienBasicSpeed = -1f;
+    public static float AlienBasicSpeed = -0.75f;
     public static float AlienBasicMinimumSecondsUntilSpawn = 2f;
     public static float AlienBasicMaximumSecondsUntilSpawn = 4f;
     
@@ -35,17 +35,17 @@ public static class GameParameters
     public static float AlienShooterMinimumSecondsUntilSpawn = 2f;
     public static float AlienShooterMaximumSecondsUntilSpawn = 6f;
 
-    public static float BulletSpeed = -1f;
+    public static float BulletSpeed = -1.25f;
     public static float ObstacleXSpawnCoordinate = 2f;
     
     // COLLECTABLES
     public static float ChuckScore = 0f;
     
-    public static float MailObjectSpeed = -0.5f;
+    public static float MailObjectSpeed = -0.4f;
     public static float MailObjectMinimumSecondsUntilSpawn = 1f;
     public static float MailObjectMaximumSecondsUntilSpawn = 3f;
     
-    public static float FeatherObjectSpeed = -0.5f;
-    public static float FeatherObjectMinimumSecondsUntilSpawn = 2f;
-    public static float FeatherObjectMaximumSecondsUntilSpawn = 4f;
+    public static float FeatherObjectSpeed = -0.3f;
+    public static float FeatherObjectMinimumSecondsUntilSpawn = 5f;
+    public static float FeatherObjectMaximumSecondsUntilSpawn = 7f;
 }
