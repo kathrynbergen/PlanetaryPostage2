@@ -5,14 +5,16 @@ using UnityEngine;
 
 public static class SpriteTools
 {
+    public static float TopPadding = 250f;
     public static Vector3 ConstrainToScreen(SpriteRenderer spriteRenderer)
     {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(spriteRenderer.transform.position);
-
-
+        
+        float topLimit = Screen.height - TopPadding;
+        
         // if we're offscreen to the top
-        if (SpriteTop(spriteRenderer) > Screen.height)
-            screenPosition.y = Screen.height - SpriteHalfHeight(spriteRenderer);
+        if (SpriteTop(spriteRenderer) > topLimit)
+            screenPosition.y = topLimit - SpriteHalfHeight(spriteRenderer);
 
 
         // if we're offscreen to the bottom

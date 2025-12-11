@@ -37,15 +37,15 @@ public class UI_ParryCooldown : MonoBehaviour
         
         Chuck.setCanParrying(true);
         ParryReadyText.SetActive(true);
-        yield return new WaitForSeconds(GameParameters.ParryTextFlashInterval);
+        yield return new WaitForSeconds(GameParameters.TextFlashInterval);
         ParryReadyText.SetActive(false);
-        yield return new WaitForSeconds(GameParameters.ParryTextFlashInterval);
+        yield return new WaitForSeconds(GameParameters.TextFlashInterval);
         ParryReadyText.SetActive(true);
-        yield return new WaitForSeconds(GameParameters.ParryTextFlashInterval);
+        yield return new WaitForSeconds(GameParameters.TextFlashInterval);
         ParryReadyText.SetActive(false);
-        yield return new WaitForSeconds(GameParameters.ParryTextFlashInterval);
+        yield return new WaitForSeconds(GameParameters.TextFlashInterval);
         ParryReadyText.SetActive(true);
-        yield return new WaitForSeconds(GameParameters.ParryTextFlashIntervalLong);
+        yield return new WaitForSeconds(GameParameters.TextFlashIntervalLong);
         ParryReadyText.SetActive(false);
     }
 }

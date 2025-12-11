@@ -99,7 +99,7 @@ public class KeyboardInput : MonoBehaviour
        //
        if (Input.GetKeyDown(KeyCode.P))
        {
-           Chuck.Shoot();
+           Chuck.TestIncrease();
        }
       
       

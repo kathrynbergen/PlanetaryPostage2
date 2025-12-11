@@ -6,9 +6,11 @@ public class QuickTimeEvent : MonoBehaviour
 {
     public ProgressBarIcon ProgressBarIcon;
     public bool IsInQTE = false;
+    public HealthDisplay Health;
 
     public Text QTEText;
     public Text QTETextProgress;
+    public Text QTETextTimer;
 
     public int pressesNeeded = 10;
     public float timeLimit = 5f;
@@ -21,6 +23,7 @@ public class QuickTimeEvent : MonoBehaviour
         {
             return;
         }
+        QTETextTimer.text = "Time Remaining: " + (timeLimit - timer).ToString("F2");
 
         timer += Time.deltaTime;
         if (timer >= timeLimit)
@@ -43,6 +46,7 @@ public class QuickTimeEvent : MonoBehaviour
         timer = 0f;
         QTEText.enabled = true;
         QTETextProgress.enabled = true;
+        QTETextTimer.enabled = true;
         QTEText.text = "Spam Space To Launch The Package Before Time Runs Out!";
         QTETextProgress.text = "0/" + pressesNeeded;
     }
@@ -63,16 +67,27 @@ public class QuickTimeEvent : MonoBehaviour
         if (!didBeatQTE)
         {
             QTEText.text = "Package Launch Failed!";
+            QTETextTimer.text = "TIME'S UP!";
+            QTETextProgress.text = "-1000 Points!";
             StartCoroutine(Wait());
         }
         else
         {
             QTEText.text = "Package Launch Success!";
-            QTETextProgress.text = "+1000 Points!";
+            QTETextTimer.text = "+1000 Points!";
             StartCoroutine(Wait());
             
         }
             
+    }
+
+    public void ForceStop()
+    {
+        IsInQTE = false;
+        QTEText.enabled = false;
+        QTETextProgress.enabled = false;
+        QTETextTimer.enabled = false;
+        StopAllCoroutines();
     }
 
     IEnumerator Wait()
@@ -80,7 +95,9 @@ public class QuickTimeEvent : MonoBehaviour
         yield return new WaitForSeconds(3f);
         QTEText.enabled = false;
         QTETextProgress.enabled = false;
+        QTETextTimer.enabled = false;
         ProgressBarIcon.StartMovement();
         ProgressBarIcon.Move();
     }
+    
 }

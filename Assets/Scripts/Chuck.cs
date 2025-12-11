@@ -13,6 +13,7 @@ public class Chuck : MonoBehaviour
    
    public Game Game;
    public HealthDisplay HP;
+   public UI_Boosting BoostDisplay;
    public UI_ParryCooldown ParryCooldownMeter;
    public ChuckAnimator ChuckAnimator;
    public UI_ChuckIcon ChuckIcon;
@@ -27,6 +28,7 @@ public class Chuck : MonoBehaviour
    
    private bool canParry = true;
    private bool canBoost = true;
+   private bool canBeDamaged = true;
    
    //MOVEMENT
    public void Move(Vector2 direction)
@@ -47,18 +49,12 @@ public class Chuck : MonoBehaviour
    }
 
    //PACKAGE LAUNCH 
-   
-   //!!!
-   //UNFINISHED
    public void Shoot()
    {
        isShooting = true;
    }
 
-   IEnumerator MoveToLaunchPos()
-   {
-       yield return null;
-   }
+
 
 
    //PULSING
@@ -135,7 +131,14 @@ public class Chuck : MonoBehaviour
        isParrying = false;
        isBoosting = false;
        isShooting = false;
+       StartCoroutine(IFrames());
        ChangeToNormalAnim();
+   }
+
+   IEnumerator IFrames()
+   {
+       yield return new WaitForSeconds(1.5f);
+       canBeDamaged = true;
    }
    
    private void ChangeToParrySprite()
@@ -172,12 +175,14 @@ public class Chuck : MonoBehaviour
    //Player can boost while boosting, but shouldn't be an issue when we set boost conditions
    public void Boost()
    {
-       if (canBoost && Game.IsPlaying)
+       if (BoostDisplay.GetBoost() == 5 && Game.IsPlaying)
        {
            //ChangeToBoostSprite();
            ChuckAnimator.StartBoostingAnim();
            Debug.Log("BOOSTING!");
+           BoostDisplay.UseBoost();
            isBoosting = true;
+           canBeDamaged = false;
            StartCoroutine(BoostTimer());
        }
    }
@@ -204,7 +209,7 @@ public class Chuck : MonoBehaviour
            }
            else
            {
-               if (!isShooting)
+               if (canBeDamaged)
                {
                    TakeDamage();
                    HP.DecreaseHealth();
@@ -225,5 +230,10 @@ public class Chuck : MonoBehaviour
    {
        Health--;
        ChuckIcon.DamageIcon();
+   }
+   
+   public void TestIncrease()
+   {
+        BoostDisplay.IncreaseBoost();
    }
 }

@@ -45,4 +45,16 @@ public class HealthDisplay : MonoBehaviour
             Game.GameOver();
         UpdateHealthDisplay();
     }
+
+    public void IncreaseHealth()
+    {
+        if (Health == 3f)
+        {
+            return;
+        }
+        else
+        {
+            Health++;
+        }
+    }
 }

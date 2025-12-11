@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
    public UI UI;
+   public QuickTimeEvent QTE;
    public ProgressBarIcon ProgressBar;
    public HealthDisplay HealthDisplay;
    public AsteroidPlacer AsteroidPlacer;
@@ -52,6 +53,7 @@ public class Game : MonoBehaviour
    public void GameOver()
    {
        ProgressBar.StopMovement();
+       QTE.ForceStop();
        DisablePlayerMovement();
        DisableObstacles();
        UI.GameOver();
