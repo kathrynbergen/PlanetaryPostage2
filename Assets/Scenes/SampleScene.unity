@@ -422,6 +422,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &303488257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303488258}
+  - component: {fileID: 303488260}
+  - component: {fileID: 303488259}
+  m_Layer: 5
+  m_Name: UI QTE PROGRESS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &303488258
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303488257}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1952290207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 120}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &303488259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303488257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 67e14781642f34a50b41c6c8217cf959, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 3
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &303488260
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303488257}
+  m_CullTransparentMesh: 1
 --- !u!1 &350680761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1339,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProgressBarIcon
   PBISpriteRenderer: {fileID: 621674512}
   NormalSprite: {fileID: 21300000, guid: 33ae1291c75bd4f36aa056b5d40c0748, type: 3}
+  QTE: {fileID: 1024364050}
+  HealthDisplay: {fileID: 1957384543}
+  planetsVisited: 0
+  startPosition: 0.75
+  endPosition: 1.58
+  travelTime: 30
 --- !u!1 &642107310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d11c7c6224c474dabb7b7a210860e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ChuckIcon
-  IconRenderer: {fileID: 0}
+  IconRenderer: {fileID: 941971276}
   NormalIcon: {fileID: 21300000, guid: b2526256659864d9ea2472dda3583116, type: 3}
   HappyIcon: {fileID: 21300000, guid: 8a459d270d2494191b379ea3a3f57c91, type: 3}
   SadIcon: {fileID: 21300000, guid: b40f2be327eae4c91b2e7e3d24536603, type: 3}
@@ -1823,7 +1908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &986610266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2014,6 +2099,7 @@ GameObject:
   - component: {fileID: 1024364046}
   - component: {fileID: 1024364048}
   - component: {fileID: 1024364049}
+  - component: {fileID: 1024364050}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -2093,6 +2179,24 @@ MonoBehaviour:
   ParryCooldownFour: {fileID: 21300000, guid: 08cd989795fe647659133ac01570a914, type: 3}
   ParryCooldownReady: {fileID: 21300000, guid: 217da470bb86743efbabbd9a79525857, type: 3}
   ParryReadyText: {fileID: 986610265}
+--- !u!114 &1024364050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024364045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e9fa04944914790b259c9e9687a278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuickTimeEvent
+  ProgressBarIcon: {fileID: 621674513}
+  IsInQTE: 0
+  QTEText: {fileID: 1965757850}
+  QTETextProgress: {fileID: 303488259}
+  pressesNeeded: 10
+  timeLimit: 5
 --- !u!1 &1025191022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,7 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game
   UI: {fileID: 1024364046}
-  ProgressBar: {fileID: 596560417}
+  ProgressBar: {fileID: 621674513}
   HealthDisplay: {fileID: 405990204}
   AsteroidPlacer: {fileID: 1797540268}
   AlienBasicPlacer: {fileID: 1797540270}
@@ -3858,7 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b27c891b71443989878259ed4e2b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlienShooterPlacer
-  ObstaclePrefab: {fileID: 8396462593315776931, guid: a690a1b08c44a416d97ab5fafa6bde0f, type: 3}
+  ObstaclePrefab: {fileID: 4913151162848238925, guid: cda02be70d04b4ce7a796c1766f4ec47, type: 3}
   minimumSecondsUntilSpawn: 1
   maximumSecondsUntilSpawn: 3
   IsOkToCreate: 0
@@ -4184,6 +4288,8 @@ RectTransform:
   m_Children:
   - {fileID: 986610266}
   - {fileID: 1154847216}
+  - {fileID: 303488258}
+  - {fileID: 1965757849}
   m_Father: {fileID: 1024364047}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4264,6 +4370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957384541}
   - component: {fileID: 1957384542}
+  - component: {fileID: 1957384543}
   m_Layer: 0
   m_Name: UI health
   m_TagString: Untagged
@@ -4347,6 +4454,104 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1957384543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957384540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9a983749d5743c895ee8f34b581fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthDisplay
+  Game: {fileID: 1318248512}
+  Health: 3
+  EmptyHealthSprite: {fileID: 21300000, guid: 4bb30446e1b0d4c7c8a2fbd82cc12956, type: 3}
+  OneHealthSprite: {fileID: 21300000, guid: 0eedabf0a5fef46ccbb9d40f8b78e2d3, type: 3}
+  TwoHealthSprite: {fileID: 21300000, guid: 63da9acda344f48548c03e00d5040fc5, type: 3}
+  ThreeHealthSprite: {fileID: 21300000, guid: 78b0194008f044a0894a0ab4b57dfc87, type: 3}
+  HealthSpriteRenderer: {fileID: 1957384542}
+--- !u!1 &1965757848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965757849}
+  - component: {fileID: 1965757851}
+  - component: {fileID: 1965757850}
+  m_Layer: 5
+  m_Name: UI QTE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1965757849
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965757848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1952290207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 200}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1965757850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965757848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 67e14781642f34a50b41c6c8217cf959, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 3
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1965757851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965757848}
+  m_CullTransparentMesh: 1
 --- !u!1 &1990651291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,6 +4985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyboardInput
   Chuck: {fileID: 2100764812}
+  QTE: {fileID: 1024364050}
 --- !u!4 &2137672085
 Transform:
   m_ObjectHideFlags: 0

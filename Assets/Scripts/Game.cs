@@ -5,7 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
    public UI UI;
-   public UI_ProgressBar ProgressBar;
+   public ProgressBarIcon ProgressBar;
    public HealthDisplay HealthDisplay;
    public AsteroidPlacer AsteroidPlacer;
    public AlienBasicPlacer AlienBasicPlacer;
@@ -85,6 +85,7 @@ public class Game : MonoBehaviour
        EnableObstacles();
        EnablePlayerMovement();
        ProgressBar.StartMovement();
+       ProgressBar.Move();
        
        // reset all values to initial
        ResetHealth();
