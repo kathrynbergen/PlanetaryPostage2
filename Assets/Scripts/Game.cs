@@ -56,6 +56,7 @@ public class Game : MonoBehaviour
        ChuckIcon.MakeDeadIcon();
        ProgressBar.StopMovement();
        QTE.ForceStop();
+       ProgressBar.ForceStop();
        DisablePlayerMovement();
        DisableObstacles();
        DestroyObstacles();
@@ -119,6 +120,8 @@ public class Game : MonoBehaviour
        ResetHealth();
        UI_Boosting.ResetBoost();
        // reset score to 0
+       ScoreKeeper.ResetScore();
+       UI.SetScoreText();
    }
 
 

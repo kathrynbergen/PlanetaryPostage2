@@ -97,10 +97,10 @@ public class KeyboardInput : MonoBehaviour
        }
       
        //
-       if (Input.GetKeyDown(KeyCode.P))
-       {
-           Chuck.TestIncrease();
-       }
+       //if (Input.GetKeyDown(KeyCode.P))
+       //{
+         //  Chuck.TestIncrease();
+       //}
       
       
    }

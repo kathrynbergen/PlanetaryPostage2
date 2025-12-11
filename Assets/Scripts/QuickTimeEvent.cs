@@ -9,6 +9,7 @@ public class QuickTimeEvent : MonoBehaviour
     public HealthDisplay Health;
     public ChuckAnimator ChuckAnim;
     public UI_ChuckIcon ChuckIcon;
+    public Chuck Chuck;
 
     public Text QTEText;
     public Text QTETextProgress;
@@ -68,6 +69,7 @@ public class QuickTimeEvent : MonoBehaviour
     {
         IsInQTE = false;
         ChuckAnim.NormalAnim();
+        Chuck.StartIFramesExternally();
         
         if (!didBeatQTE)
         {

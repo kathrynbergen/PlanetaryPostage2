@@ -55,4 +55,10 @@ public class ProgressBarIcon : MonoBehaviour
         Debug.Log("Planet Reached!");
         QTE.StartQTE();
     }
+    
+    public void ForceStop()
+    {
+        isMoving = false;
+        StopAllCoroutines();
+    }
 }

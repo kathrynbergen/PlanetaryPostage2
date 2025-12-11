@@ -139,6 +139,18 @@ public class Chuck : MonoBehaviour
       canBeDamaged = true;
   }
 
+  public void StartIFramesExternally()
+  {
+      canBeDamaged = false;
+      StartCoroutine(LongIFrames());
+  }
+  
+  IEnumerator LongIFrames()
+  {
+      yield return new WaitForSeconds(3f);
+      canBeDamaged = true;
+  }
+
 
   private void ChangeToNormalAnim()
   {
@@ -182,9 +194,9 @@ public class Chuck : MonoBehaviour
       Debug.Log("OnTriggerEnter2D");
       if (collision.gameObject.tag == "Obstacle")
       {
-          if (isParrying)
+          if (isParrying || isBoosting)
           {
-              Debug.Log("PARRY KILL");
+              Debug.Log("OBJECT DESTROYED");
               Destroy(collision.gameObject);
           }
           else
@@ -218,10 +230,15 @@ public class Chuck : MonoBehaviour
 
   public void TakeDamage()
   {
+      canBeDamaged = false;
       Health--;
-      ChuckIcon.DamageIcon();
+      if (Health > 1)
+      {
+          ChuckIcon.DamageIcon();
+      }
       ChuckAnimator.StartDamageAnim();
       StartCoroutine(TakingDamageTimer());
+      StartCoroutine(IFrames());
   }
 
   IEnumerator TakingDamageTimer()
