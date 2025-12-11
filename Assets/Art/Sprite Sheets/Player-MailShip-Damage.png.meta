@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 4404f607bc27441efb157b257e78e8db
+guid: 729e6c6ed2729448aa6d101b93255993
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -59642668731099794
-    second: Player-MailShip-package-idle_0
+      213: -4535378364526498122
+    second: Player-MailShip-Damage_0
   - first:
-      213: 6907423072700290019
-    second: Player-MailShip-package-idle_1
+      213: -126037725390600828
+    second: Player-MailShip-Damage_1
   - first:
-      213: 9139248890848331377
-    second: Player-MailShip-package-idle_2
+      213: -504603061533490058
+    second: Player-MailShip-Damage_2
+  - first:
+      213: -2595491687027251300
+    second: Player-MailShip-Damage_3
+  - first:
+      213: 1880714579238529504
+    second: Player-MailShip-Damage_4
+  - first:
+      213: -7927164823831667793
+    second: Player-MailShip-Damage_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player-MailShip-package-idle_0
+      name: Player-MailShip-Damage_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 215
-        height: 116
+        width: 117
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6593dc0f4b1c2ff0800000000000000
-      internalID: -59642668731099794
+      spriteID: 6bee76c28691f01c0800000000000000
+      internalID: -4535378364526498122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-MailShip-package-idle_1
+      name: Player-MailShip-Damage_1
       rect:
         serializedVersion: 2
-        x: 215
+        x: 117
         y: 0
-        width: 215
-        height: 116
+        width: 117
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e353a100b81cdf50800000000000000
-      internalID: 6907423072700290019
+      spriteID: 4858bc54b59304ef0800000000000000
+      internalID: -126037725390600828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-MailShip-package-idle_2
+      name: Player-MailShip-Damage_2
       rect:
         serializedVersion: 2
-        x: 430
+        x: 234
         y: 0
-        width: 215
-        height: 116
+        width: 117
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 176c5e4c17225de70800000000000000
-      internalID: 9139248890848331377
+      spriteID: 674c8b4603a4ff8f0800000000000000
+      internalID: -504603061533490058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-Damage_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 117
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97e249ef06fafbd0800000000000000
+      internalID: -2595491687027251300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-Damage_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 117
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9296302f3a91a10800000000000000
+      internalID: 1880714579238529504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-Damage_5
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 117
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab9a87b79d0df190800000000000000
+      internalID: -7927164823831667793
       vertices: []
       indices: 
       edges: []
@@ -175,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b134aa89cbbcf4f0abdf2b3f8e93e8f7
+    spriteID: 3cb99bf3b60f145b7b7c295b75db163c
     internalID: 0
     vertices: []
     indices: 
@@ -185,11 +260,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":215.0,"y":116.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":117.0,"y":60.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Player-MailShip-package-idle_0: -59642668731099794
-      Player-MailShip-package-idle_1: 6907423072700290019
-      Player-MailShip-package-idle_2: 9139248890848331377
+      Player-MailShip-Damage_0: -4535378364526498122
+      Player-MailShip-Damage_1: -126037725390600828
+      Player-MailShip-Damage_2: -504603061533490058
+      Player-MailShip-Damage_3: -2595491687027251300
+      Player-MailShip-Damage_4: 1880714579238529504
+      Player-MailShip-Damage_5: -7927164823831667793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

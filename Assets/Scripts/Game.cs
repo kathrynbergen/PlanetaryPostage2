@@ -14,6 +14,7 @@ public class Game : MonoBehaviour
    public AlienShooterPlacer AlienShooterPlacer;
    public FeatherPlacer FeatherPlacer;
    public MailPlacer MailPlacer;
+   public UI_ChuckIcon ChuckIcon;
    public bool IsPlaying = false;
   
    public void Start()
@@ -52,6 +53,7 @@ public class Game : MonoBehaviour
 
    public void GameOver()
    {
+       ChuckIcon.MakeDeadIcon();
        ProgressBar.StopMovement();
        QTE.ForceStop();
        DisablePlayerMovement();
@@ -106,6 +108,7 @@ public class Game : MonoBehaviour
    private void StartGame()
    {
        UI.StartGame();
+       ChuckIcon.ReturnToNormalIcon();
        UpdateSpawnRates();
        EnableObstacles();
        EnablePlayerMovement();

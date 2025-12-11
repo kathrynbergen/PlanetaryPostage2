@@ -7,6 +7,8 @@ public class QuickTimeEvent : MonoBehaviour
     public ProgressBarIcon ProgressBarIcon;
     public bool IsInQTE = false;
     public HealthDisplay Health;
+    public ChuckAnimator ChuckAnim;
+    public UI_ChuckIcon ChuckIcon;
 
     public Text QTEText;
     public Text QTETextProgress;
@@ -43,6 +45,7 @@ public class QuickTimeEvent : MonoBehaviour
     public void StartQTE()
     {
         IsInQTE = true;
+        ChuckAnim.StartShootingReadyAnim();
         currentPresses = 0;
         timer = 0f;
         QTEText.enabled = true;
@@ -64,9 +67,12 @@ public class QuickTimeEvent : MonoBehaviour
     void EndQTE(bool didBeatQTE)
     {
         IsInQTE = false;
+        ChuckAnim.NormalAnim();
         
         if (!didBeatQTE)
         {
+            ChuckAnim.StartShootingFailureAnim();
+            ChuckIcon.MakeSadIcon();
             QTEText.text = "Package Launch Failed!";
             QTETextTimer.text = "TIME'S UP!";
             QTETextProgress.text = "-1000 Points!";
@@ -74,6 +80,8 @@ public class QuickTimeEvent : MonoBehaviour
         }
         else
         {
+            ChuckAnim.StartShootingSuccessAnim();
+            ChuckIcon.MakeHappyIcon();
             QTEText.text = "Package Launch Success!";
             QTETextTimer.text = "+1000 Points!";
             ScoreKeeper.AddBigPoint();
@@ -90,6 +98,7 @@ public class QuickTimeEvent : MonoBehaviour
         QTEText.enabled = false;
         QTETextProgress.enabled = false;
         QTETextTimer.enabled = false;
+        ChuckAnim.NormalAnim();
         StopAllCoroutines();
     }
 

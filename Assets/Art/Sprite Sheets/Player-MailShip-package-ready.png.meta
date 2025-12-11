@@ -121,12 +121,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 45
-        width: 115
-        height: 60
+        x: 0
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_1
       rect:
         serializedVersion: 2
-        x: 287
-        y: 38
-        width: 111
-        height: 67
+        x: 227
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_2
       rect:
         serializedVersion: 2
-        x: 522
-        y: 6
-        width: 103
-        height: 99
+        x: 454
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_3
       rect:
         serializedVersion: 2
-        x: 737
+        x: 681
         y: 0
-        width: 154
-        height: 105
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_4
       rect:
         serializedVersion: 2
-        x: 968
-        y: 13
-        width: 167
-        height: 97
+        x: 908
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_5
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 19
-        width: 150
-        height: 98
+        x: 1135
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Player-MailShip-package-ready_6
       rect:
         serializedVersion: 2
-        x: 1430
-        y: 17
-        width: 153
-        height: 96
+        x: 1362
+        y: 0
+        width: 227
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 56becfe95094f43f48206f043ed9da8e
     internalID: 0
     vertices: []
     indices: 
@@ -283,7 +283,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":227.0,"y":150.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Player-MailShip-package-ready_0: -7384720926223433380
       Player-MailShip-package-ready_1: -949269989455548458
