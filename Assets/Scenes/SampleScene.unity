@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthDisplay
   Game: {fileID: 1318248512}
-  ChuckIcon: {fileID: 941971277}
+  ChuckIcon: {fileID: 0}
   Health: 3
   EmptyHealthSprite: {fileID: 21300000, guid: 4bb30446e1b0d4c7c8a2fbd82cc12956, type: 3}
   OneHealthSprite: {fileID: 21300000, guid: 0eedabf0a5fef46ccbb9d40f8b78e2d3, type: 3}
