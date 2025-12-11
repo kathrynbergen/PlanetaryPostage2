@@ -12,14 +12,14 @@ public class ObstacleObject : MonoBehaviour
     protected float ObstacleSpeed = -1f;
     protected bool isShooter = false;
     
-    private SpriteRenderer ObstacleSpriteRenderer;
+ //   private SpriteRenderer ObstacleSpriteRenderer;
     private bool canMove = true;
     private bool waitingToShoot = false;
     private bool turnedAround = false;
 
     public void Start()
     {
-        ObstacleSpriteRenderer = ObstaclePrefab.GetComponent<SpriteRenderer>();
+//        ObstacleSpriteRenderer = ObstaclePrefab.GetComponent<SpriteRenderer>();
         StartCoroutine(CountdownUntilDestroyedOffScreen());
     }
     public void Update()

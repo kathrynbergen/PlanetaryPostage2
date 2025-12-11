@@ -11,6 +11,8 @@ public class Game : MonoBehaviour
    public AsteroidPlacer AsteroidPlacer;
    public AlienBasicPlacer AlienBasicPlacer;
    public AlienShooterPlacer AlienShooterPlacer;
+   public FeatherPlacer FeatherPlacer;
+   public MailPlacer MailPlacer;
    public bool IsPlaying = false;
   
    public void Start()
@@ -20,19 +22,16 @@ public class Game : MonoBehaviour
    }
    public void OnStartLevelOneButtonClicked()
    {
-       print("Level One Start");
        AdjustDifficultyToLevelOne();
        StartGame();
    }
    public void OnStartLevelTwoButtonClicked()
    {
-       print("Level Two Start");
        AdjustDifficultyToLevelTwo();
        StartGame();
    }
    public void OnStartLevelThreeButtonClicked()
    {
-       print("Level Three Start");
        AdjustDifficultyToLevelThree();
        StartGame();
    }
@@ -56,6 +55,7 @@ public class Game : MonoBehaviour
        QTE.ForceStop();
        DisablePlayerMovement();
        DisableObstacles();
+       DestroyObstacles();
        UI.GameOver();
    }
 
@@ -68,6 +68,19 @@ public class Game : MonoBehaviour
        AlienBasicPlacer.IsGameOver = true;
        AlienShooterPlacer.IsOkToCreate = false;
        AlienShooterPlacer.IsGameOver = true;
+       FeatherPlacer.IsOkToCreate = false;
+       FeatherPlacer.IsGameOver = true;
+       MailPlacer.IsOkToCreate = false;
+       MailPlacer.IsGameOver = true;
+   }
+
+   private void DestroyObstacles()
+   {
+       AsteroidPlacer.DestroyObstacle();
+       AlienBasicPlacer.DestroyObstacle();
+       AlienShooterPlacer.DestroyObstacle();
+       FeatherPlacer.DestroyObstacle();
+       MailPlacer.DestroyObstacle();
    }
 
 
@@ -75,10 +88,19 @@ public class Game : MonoBehaviour
    {
        AsteroidPlacer.IsOkToCreate = true;
        AsteroidPlacer.IsGameOver = false;
+       AsteroidPlacer.SpawnCoroutine = null;
        AlienBasicPlacer.IsOkToCreate = true;
        AlienBasicPlacer.IsGameOver = false;
+       AlienBasicPlacer.SpawnCoroutine = null;
        AlienShooterPlacer.IsOkToCreate = true;
        AlienShooterPlacer.IsGameOver = false;
+       AlienShooterPlacer.SpawnCoroutine = null;
+       FeatherPlacer.IsOkToCreate = true;
+       FeatherPlacer.IsGameOver = false;
+       FeatherPlacer.SpawnCoroutine = null;
+       MailPlacer.IsOkToCreate = true;
+       MailPlacer.IsGameOver = false;
+       MailPlacer.SpawnCoroutine = null;
    }
    private void StartGame()
    {
@@ -116,7 +138,8 @@ public class Game : MonoBehaviour
        AsteroidPlacer.UpdateSpawnRates();
        AlienBasicPlacer.UpdateSpawnRates();
        AlienShooterPlacer.UpdateSpawnRates();
-      
+      FeatherPlacer.UpdateSpawnRates();
+      MailPlacer.UpdateSpawnRates();
    }
 
 
@@ -141,8 +164,7 @@ public class Game : MonoBehaviour
       
        GameParameters.AlienBasicMinimumSecondsUntilSpawn = alienBasicMin;
        GameParameters.AlienBasicMaximumSecondsUntilSpawn = alienBasicMax;
-
-
+       
        GameParameters.AlienShooterMinimumSecondsUntilSpawn = alienShooterMin;
        GameParameters.AlienShooterMaximumSecondsUntilSpawn = alienShooterMax;
    }

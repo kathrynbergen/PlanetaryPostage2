@@ -41,11 +41,11 @@ public static class GameParameters
     // COLLECTABLES
     public static float ChuckScore = 0f;
     
-    public static float MailObjectSpeed = 1f;
+    public static float MailObjectSpeed = -1f;
     public static float MailObjectMinimumSecondsUntilSpawn = 1f;
     public static float MailObjectMaximumSecondsUntilSpawn = 3f;
     
-    public static float FeatherObjectSpeed = 1f;
+    public static float FeatherObjectSpeed = -1f;
     public static float FeatherObjectMinimumSecondsUntilSpawn = 2f;
     public static float FeatherObjectMaximumSecondsUntilSpawn = 4f;
 }

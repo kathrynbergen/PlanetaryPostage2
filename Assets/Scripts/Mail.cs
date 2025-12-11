@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class MailObject : MonoBehaviour
+public class Mail : ObstacleObject
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        ObstacleSpeed = GameParameters.MailObjectSpeed; 
+        isShooter = false;
+        base.Start(); 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

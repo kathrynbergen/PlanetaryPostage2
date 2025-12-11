@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7381107983602229112}
   - component: {fileID: 3419117164905144312}
   - component: {fileID: 3051017463463292122}
+  - component: {fileID: -9148511210922117065}
   m_Layer: 0
   m_Name: Item-BoostFeather
   m_TagString: Feather
@@ -148,3 +149,18 @@ PolygonCollider2D:
       - {x: 0.22878566, y: 0.12660027}
       - {x: -0.140625, y: 0.546875}
   m_UseDelaunayMesh: 0
+--- !u!114 &-9148511210922117065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853174497576373665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d495a849a25dc647b1f5bb0c7ca4077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoostFeather
+  ObstaclePrefab: {fileID: 0}
+  BulletPrefab: {fileID: 0}
+  Bullet: {fileID: 0}

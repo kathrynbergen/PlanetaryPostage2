@@ -16,17 +16,18 @@ public class ObstacleObjectPlacer : MonoBehaviour
     private float minimumY = -0.85f; 
     private float maximumY = 0.25f;
     
+    private List<GameObject> spawnedObstacles = new List<GameObject>();
     
     private static List<float> occupiedY = new List<float>();
     
-    private Coroutine spawnCoroutine;
+    public Coroutine SpawnCoroutine;
 
     // Update is called once per frame
     void Update()
     {
-        if (IsOkToCreate && spawnCoroutine == null)
+        if (IsOkToCreate && SpawnCoroutine == null)
         {
-            spawnCoroutine = StartCoroutine(CountdownUntilCreation());
+            SpawnCoroutine = StartCoroutine(CountdownUntilCreation());
         }
     }
 
@@ -41,7 +42,7 @@ public class ObstacleObjectPlacer : MonoBehaviour
         yield return TryToPlaceObstacle();
         
         IsOkToCreate = true;
-        spawnCoroutine = null;
+        SpawnCoroutine = null;
     }
 
     IEnumerator TryToPlaceObstacle()
@@ -50,12 +51,12 @@ public class ObstacleObjectPlacer : MonoBehaviour
         {
             float chosenY = Random.Range(minimumY, maximumY);
             
-            Vector2 boxSize = new Vector2(0.75f, 0.75f); // 1/2 size of obstacle width and height -- check this
+            Vector2 boxSize = new Vector2(0.75f, 0.75f); 
             Vector2 spawnPosition = new Vector2(10f, chosenY);
 
             Collider2D hit = Physics2D.OverlapBox(spawnPosition, boxSize, 0f);
 
-            if (hit == null || hit.tag != "Obstacle") // no overlap with another obstacle
+            if (hit == null || hit.tag != "Obstacle") 
             {
                 PlaceObstacle(chosenY);
                 yield break;
@@ -70,5 +71,22 @@ public class ObstacleObjectPlacer : MonoBehaviour
     {
         GameObject newObstacle = Instantiate(ObstaclePrefab, new Vector2(GameParameters.ObstacleXSpawnCoordinate,yLocation), Quaternion.identity);
         occupiedY.Add(yLocation);
+        spawnedObstacles.Add(newObstacle);
+    }
+
+    public void DestroyObstacle()
+    {
+        foreach (GameObject obstacle in spawnedObstacles)
+        {
+                Destroy(obstacle);
+        }
+        spawnedObstacles.Clear();
+        occupiedY.Clear();
+
+        if (SpawnCoroutine != null)
+        {
+            StopCoroutine(SpawnCoroutine);
+            SpawnCoroutine = null;
+        }
     }
 }
