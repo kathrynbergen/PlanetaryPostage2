@@ -19,8 +19,8 @@ public static class GameParameters
     public static float ChuckBoostSpeed = 0.24f;
     public static float ChuckBoostDuration = 5f;
 
-    public static float ChuckIconShootingDuration = 2f;
-    public static float ChuckDamageIconDuration = 2f;
+    public static float ChuckShootingIconDuration = 3f;
+    public static float ChuckDamageIconDuration = 1f;
     
     //OBSTACLES
     public static float AsteroidSpeed = -0.5f;

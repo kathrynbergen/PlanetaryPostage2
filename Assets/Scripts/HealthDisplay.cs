@@ -4,6 +4,7 @@ using UnityEngine;
 public class HealthDisplay : MonoBehaviour
 {
     public Game Game;
+    public UI_ChuckIcon ChuckIcon;
   
     public float Health = GameParameters.ChuckHealth;
     
@@ -33,6 +34,7 @@ public class HealthDisplay : MonoBehaviour
                 break;
             default:
                 HealthSpriteRenderer.sprite = EmptyHealthSprite;
+                ChuckIcon.MakeDeadIcon();
                 break;
         }
     }

@@ -6,12 +6,6 @@ public class Chuck : MonoBehaviour
 {
   public SpriteRenderer ChuckSpriteRenderer;
  
-  public Sprite NormalSprite;
-  public Sprite ParrySprite;
-  public Sprite BoostSprite;
-  public Sprite PulseSprite;
-  public Sprite ShootSprite;
- 
   public Game Game;
   public HealthDisplay HP;
   public UI_Boosting BoostDisplay;
@@ -58,14 +52,9 @@ public class Chuck : MonoBehaviour
   {
       isShooting = true;
   }
-
-
-
-
-
-
-
-
+  
+  
+  
   //PULSING
   public void Pulse()
   {
@@ -77,10 +66,7 @@ public class Chuck : MonoBehaviour
           StartCoroutine(PulseTimer());
       }
   }
-
-
-
-
+  
   IEnumerator PulseTimer()
   {
       isPulsing = true;
@@ -114,12 +100,6 @@ public class Chuck : MonoBehaviour
       yield return new WaitForSeconds(GameParameters.ChuckParryDuration);
       ReturnFromParry();
   }
- 
-  public bool getIsParrying()
-  {
-      return isParrying;
-  }
-
 
   public void setCanParrying(bool canParry)
   {
@@ -149,6 +129,7 @@ public class Chuck : MonoBehaviour
       isShooting = false;
       StartCoroutine(IFrames());
       ChangeToNormalAnim();
+      ChuckIcon.ReturnToNormalIcon();
   }
 
 
@@ -157,40 +138,15 @@ public class Chuck : MonoBehaviour
       yield return new WaitForSeconds(1.5f);
       canBeDamaged = true;
   }
- 
-  private void ChangeToParrySprite()
-  {
-      ChuckSpriteRenderer.sprite = ParrySprite;
-  }
-
-
 
 
   private void ChangeToNormalAnim()
   {
       ChuckAnimator.NormalAnim();
   }
+  
 
-
-  private void ChangeToBoostSprite()
-  {
-      ChuckSpriteRenderer.sprite = BoostSprite;
-  }
-
-
-  private void ChangeToPulseSprite()
-  {
-      ChuckSpriteRenderer.sprite = PulseSprite;
-  }
- 
-  private void ChangeToShootSprite()
-  {
-      ChuckSpriteRenderer.sprite = ShootSprite;
-      //anim.SetTrigger("shoot");
-  }
-
-
-
+  
 
   //BOOSTING
  
@@ -200,8 +156,8 @@ public class Chuck : MonoBehaviour
   {
       if (BoostDisplay.GetBoost() == 5 && Game.IsPlaying)
       {
-          //ChangeToBoostSprite();
           ChuckAnimator.StartBoostingAnim();
+          ChuckIcon.MakeBoostingIcon();
           Debug.Log("BOOSTING!");
           BoostDisplay.UseBoost();
           isBoosting = true;
@@ -263,6 +219,14 @@ public class Chuck : MonoBehaviour
   {
       Health--;
       ChuckIcon.DamageIcon();
+      ChuckAnimator.StartDamageAnim();
+      StartCoroutine(TakingDamageTimer());
+  }
+
+  IEnumerator TakingDamageTimer()
+  {
+      yield return new WaitForSeconds(GameParameters.ChuckDamageIconDuration);
+      ChuckAnimator.NormalAnim();
   }
  
   public void TestIncrease()

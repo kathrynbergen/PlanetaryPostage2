@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ChuckAnimator : MonoBehaviour
@@ -5,7 +6,6 @@ public class ChuckAnimator : MonoBehaviour
     Animator Anim;
     public SpriteRenderer SpriteRenderer;
     public KeyboardInput KeyboardInput; 
-    public Chuck Chuck;
 
     public string isParryingName;
     public bool isParryingValue;
@@ -15,6 +15,18 @@ public class ChuckAnimator : MonoBehaviour
 
     public string isBoostingName;
     public bool isBoostingValue;
+
+    public string isShootingReadyName;
+    public bool isShootingValue;
+
+    public string isShootingSuccessName;
+    public bool isShootingSuccessValue;
+    
+    public string isShootingFailureName;
+    public bool isShootingFailureValue;
+
+    public string isDamagedName;
+    public bool isDamagedValue;
     
     
     // This class will manage Chuck's Animations
@@ -36,6 +48,10 @@ public class ChuckAnimator : MonoBehaviour
         StopParryingAnim();
         StopBoostingAnim();
         StopPulsingAnim();
+        StopShootingReadyAnim();
+        StopShootingFailureAnim();
+        StopShootingSuccessAnim();
+        StopDamageAnim();
     }
     
     public void StartParryingAnim()
@@ -67,6 +83,45 @@ public class ChuckAnimator : MonoBehaviour
     {
         Anim.SetBool(isPulsingName, false);
     }
+
+    public void StartShootingReadyAnim()
+    {
+        Anim.SetBool(isShootingReadyName, true);
+    }
     
+    public void StopShootingReadyAnim()
+    {
+        Anim.SetBool(isShootingReadyName, false);
+    }
     
+    public void StartShootingSuccessAnim()
+    {
+        Anim.SetBool(isShootingSuccessName, true);
+    }
+    
+    public void StopShootingSuccessAnim()
+    {
+        Anim.SetBool(isShootingSuccessName, false);
+    }
+    
+    public void StartShootingFailureAnim()
+    {
+        Anim.SetBool(isShootingFailureName, true);
+    }
+    
+    public void StopShootingFailureAnim()
+    {
+        Anim.SetBool(isShootingFailureName, false);
+    }
+
+    public void StartDamageAnim()
+    {
+        Anim.SetBool(isDamagedName, true);
+    }
+    
+    public void StopDamageAnim()
+    {
+        Anim.SetBool(isDamagedName, false);
+    }
+
 }

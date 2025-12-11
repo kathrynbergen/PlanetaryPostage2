@@ -10,34 +10,43 @@ public class UI_ChuckIcon : MonoBehaviour
     public Sprite Damaged;
     public Sprite Boosting;
     public Sprite Dead;
-
-    public Chuck Chuck;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void ChangeChuckIcon()
-    {
-        // if nothing, keep normal
-        // if boosting, change to boosting
-        // if successful package shoot, change to happy
-        // if failed package shoot, change to sad
-        // if chuck gets hit, change to damaged
-        // if chuck loses all health, change to dead
+        IconRenderer.sprite = NormalIcon;
     }
 
     public void ReturnToNormalIcon()
     {
         IconRenderer.sprite = NormalIcon;
+    }
+
+    public void MakeHappyIcon()
+    {
+        IconRenderer.sprite = HappyIcon;
+        StartCoroutine(ShootingTimer());
+    }
+
+    public void MakeSadIcon()
+    {
+        IconRenderer.sprite = SadIcon;
+        StartCoroutine(ShootingTimer());
+    }
+
+    IEnumerator ShootingTimer()
+    {
+        yield return new WaitForSeconds(GameParameters.ChuckShootingIconDuration);
+        ReturnToNormalIcon();
+    }
+
+    public void MakeDeadIcon()
+    {
+        IconRenderer.sprite = Dead;
+    }
+
+    public void MakeBoostingIcon()
+    {
+        IconRenderer.sprite = Boosting;
     }
 
     public void DamageIcon()
@@ -48,7 +57,7 @@ public class UI_ChuckIcon : MonoBehaviour
 
     IEnumerator DamageIconTimer()
     {
-        yield return new WaitForSeconds(GameParameters.ChuckBoostDuration);
+        yield return new WaitForSeconds(GameParameters.ChuckDamageIconDuration);
         ReturnToNormalIcon();
     }
 }
