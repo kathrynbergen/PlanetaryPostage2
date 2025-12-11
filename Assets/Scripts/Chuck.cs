@@ -249,7 +249,8 @@ public class Chuck : MonoBehaviour
       }
       else if (collision.gameObject.tag == "Feather")
       {
-          UI_Boosting.Boost++;
+          //UI_Boosting.Boost++;
+          UI_Boosting.IncreaseBoost();
           if (UI_Boosting.Boost > 5)
               UI_Boosting.Boost = 5;
           UI_Boosting.UpdateBoostDisplay();

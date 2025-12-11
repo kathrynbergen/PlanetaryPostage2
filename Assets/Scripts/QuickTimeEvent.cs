@@ -11,6 +11,7 @@ public class QuickTimeEvent : MonoBehaviour
     public Text QTEText;
     public Text QTETextProgress;
     public Text QTETextTimer;
+    public UI UI;
 
     public int pressesNeeded = 10;
     public float timeLimit = 5f;
@@ -75,6 +76,8 @@ public class QuickTimeEvent : MonoBehaviour
         {
             QTEText.text = "Package Launch Success!";
             QTETextTimer.text = "+1000 Points!";
+            ScoreKeeper.AddBigPoint();
+            UI.SetScoreText();
             StartCoroutine(Wait());
             
         }
