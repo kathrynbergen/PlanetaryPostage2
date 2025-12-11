@@ -14,10 +14,11 @@ public class Chuck : MonoBehaviour
    public Game Game;
    public HealthDisplay HP;
    public UI_ParryCooldown ParryCooldownMeter;
+   public ChuckAnimator ChuckAnimator;
+   public UI_ChuckIcon ChuckIcon;
    
    private float ChuckSpeed = GameParameters.ChuckMoveSpeed;
    private float Health = GameParameters.ChuckHealth;
-   private Animator anim;
   
    private bool isParrying = false;
    private bool isBoosting = false;
@@ -26,12 +27,6 @@ public class Chuck : MonoBehaviour
    
    private bool canParry = true;
    private bool canBoost = true;
-  
-   
-   void Start() // getting the animations
-   {
-       anim = GetComponent<Animator>();
-   }
    
    //MOVEMENT
    public void Move(Vector2 direction)
@@ -72,7 +67,8 @@ public class Chuck : MonoBehaviour
        if (!isBoosting && !isPulsing && !isShooting && !isParrying && Game.IsPlaying)
        {
            Debug.Log("PULSE");
-           ChangeToPulseSprite();
+           //ChangeToPulseSprite();
+           ChuckAnimator.StartPulsingAnim();
            StartCoroutine(PulseTimer());
        }
    }
@@ -91,7 +87,8 @@ public class Chuck : MonoBehaviour
    {
        if (canParry && Game.IsPlaying)
        {
-           ChangeToParrySprite();
+           //ChangeToParrySprite();
+           ChuckAnimator.StartParryingAnim();
            isParrying = true;
            canBoost = false;
            Debug.Log("Parry!");
@@ -121,7 +118,7 @@ public class Chuck : MonoBehaviour
    
    private void ReturnFromParry()
    {
-       ChangeToNormalSprite();
+       ChangeToNormalAnim();
        ChuckSpeed = GameParameters.ChuckMoveSpeed;
        canBoost = true;
        isParrying = false;
@@ -138,36 +135,28 @@ public class Chuck : MonoBehaviour
        isParrying = false;
        isBoosting = false;
        isShooting = false;
-       ChangeToNormalSprite();
+       ChangeToNormalAnim();
    }
    
    private void ChangeToParrySprite()
    {
        ChuckSpriteRenderer.sprite = ParrySprite;
-       // anim.SetTrigger("parry"); changes animation
    }
 
 
-   private void ChangeToNormalSprite()
+   private void ChangeToNormalAnim()
    {
-       ChuckSpriteRenderer.sprite = NormalSprite;
-       //anim.ResetTrigger("parry");
-       // anim.ResetTrigger("boost");
-       // anim.ResetTrigger("pulse");
-       // anim.ResetTrigger("shoot");
-       // // Idle plays by default
+       ChuckAnimator.NormalAnim();
    }
   
    private void ChangeToBoostSprite()
    {
        ChuckSpriteRenderer.sprite = BoostSprite;
-       //anim.SetTrigger("boost"); changes animation
    }
   
    private void ChangeToPulseSprite()
    {
        ChuckSpriteRenderer.sprite = PulseSprite;
-       //anim.SetTrigger("pulse");
    }
    
    private void ChangeToShootSprite()
@@ -185,7 +174,8 @@ public class Chuck : MonoBehaviour
    {
        if (canBoost && Game.IsPlaying)
        {
-           ChangeToBoostSprite();
+           //ChangeToBoostSprite();
+           ChuckAnimator.StartBoostingAnim();
            Debug.Log("BOOSTING!");
            isBoosting = true;
            StartCoroutine(BoostTimer());
@@ -231,5 +221,6 @@ public class Chuck : MonoBehaviour
    public void TakeDamage()
    {
        Health--;
+       ChuckIcon.DamageIcon();
    }
 }

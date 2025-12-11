@@ -94,8 +94,8 @@ public class Game : MonoBehaviour
 
    private void ResetHealth()
    {
-       HealthDisplay.Health = 3f;
-       UI.ShowHealth();
+       HealthDisplay.Health = 3f; 
+       HealthDisplay.UpdateHealthDisplay();
    }
    private void EnablePlayerMovement()
    {
