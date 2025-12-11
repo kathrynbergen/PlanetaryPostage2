@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class ProgressBarIcon : MonoBehaviour
 {
+    public PlanetScroller PlanetScroller;
     public SpriteRenderer PBISpriteRenderer;
     public Sprite NormalSprite;
     public QuickTimeEvent QTE;
@@ -51,6 +52,8 @@ public class ProgressBarIcon : MonoBehaviour
             timeOnBar += Time.deltaTime;
             yield return null;
         }
+        
+        PlanetScroller.StartMovement();
 
         Debug.Log("Planet Reached!");
         QTE.StartQTE();
