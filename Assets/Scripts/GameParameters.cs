@@ -17,6 +17,9 @@ public static class GameParameters
     
     public static float ChuckBoostSpeed = 0.24f;
     public static float ChuckBoostDuration = 5f;
+
+    public static float ChuckIconShootingDuration = 2f;
+    public static float ChuckDamageIconDuration = 2f;
     
     //OBSTACLES
     public static float AsteroidSpeed = -0.5f;
@@ -33,4 +36,15 @@ public static class GameParameters
 
     public static float BulletSpeed = -1f;
     public static float ObstacleXSpawnCoordinate = 2f;
+    
+    // COLLECTABLES
+    public static float ChuckScore = 0f;
+    
+    public static float MailObjectSpeed = 1f;
+    public static float MailObjectMinimumSecondsUntilSpawn = 1f;
+    public static float MailObjectMaximumSecondsUntilSpawn = 3f;
+    
+    public static float FeatherObjectSpeed = 1f;
+    public static float FeatherObjectMinimumSecondsUntilSpawn = 2f;
+    public static float FeatherObjectMaximumSecondsUntilSpawn = 4f;
 }

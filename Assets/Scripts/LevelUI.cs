@@ -6,7 +6,6 @@ public class LevelUI : MonoBehaviour
     public Text ScoreText;
     
     // displays the player's score-- affected by collecting letters & feathers + delivering packages
-    // REMINDER: import fun pixel text font
     public void SetScoreText(int score)
     {
         ScoreText.text = "Score: " + score;

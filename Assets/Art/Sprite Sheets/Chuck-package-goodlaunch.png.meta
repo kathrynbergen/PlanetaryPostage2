@@ -160,7 +160,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -170,11 +170,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -197,7 +197,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -226,12 +226,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_0
       rect:
         serializedVersion: 2
-        x: 2432
-        y: 699
-        width: 74
-        height: 73
+        x: 0
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -248,12 +248,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_1
       rect:
         serializedVersion: 2
-        x: 2930
-        y: 626
-        width: 211
-        height: 110
+        x: 663
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_2
       rect:
         serializedVersion: 2
-        x: 3166
-        y: 736
-        width: 55
-        height: 73
+        x: 1326
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -292,12 +292,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_3
       rect:
         serializedVersion: 2
-        x: 3879
-        y: 724
-        width: 54
-        height: 52
+        x: 1989
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -314,12 +314,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 617
-        width: 165
-        height: 96
+        x: 2652
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -336,12 +336,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_5
       rect:
         serializedVersion: 2
-        x: 941
-        y: 605
-        width: 161
-        height: 100
+        x: 3315
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_6
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 596
-        width: 153
-        height: 109
+        x: 3978
+        y: 540
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,12 +380,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_7
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 620
-        width: 209
-        height: 110
+        x: 0
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,12 +402,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_8
       rect:
         serializedVersion: 2
-        x: 3601
-        y: 620
-        width: 166
-        height: 85
+        x: 663
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -424,12 +424,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_9
       rect:
         serializedVersion: 2
-        x: 4252
-        y: 618
-        width: 154
-        height: 87
+        x: 1326
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_10
       rect:
         serializedVersion: 2
-        x: 4559
-        y: 701
-        width: 45
-        height: 32
+        x: 1989
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -468,12 +468,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_11
       rect:
         serializedVersion: 2
-        x: 278
-        y: 332
-        width: 115
-        height: 103
+        x: 2652
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -490,12 +490,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_12
       rect:
         serializedVersion: 2
-        x: 586
-        y: 412
-        width: 32
-        height: 31
+        x: 3315
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -512,12 +512,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_13
       rect:
         serializedVersion: 2
-        x: 949
-        y: 356
-        width: 103
-        height: 79
+        x: 3978
+        y: 270
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -534,12 +534,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_14
       rect:
         serializedVersion: 2
-        x: 1264
-        y: 408
-        width: 16
-        height: 20
+        x: 0
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -556,12 +556,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_15
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 365
-        width: 115
-        height: 70
+        x: 663
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -578,12 +578,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_16
       rect:
         serializedVersion: 2
-        x: 1928
-        y: 409
-        width: 10
-        height: 10
+        x: 1326
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -600,12 +600,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_17
       rect:
         serializedVersion: 2
-        x: 2267
-        y: 369
-        width: 111
-        height: 66
+        x: 1989
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -622,12 +622,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_18
       rect:
         serializedVersion: 2
-        x: 2938
-        y: 375
-        width: 103
-        height: 60
+        x: 2652
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -644,12 +644,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_19
       rect:
         serializedVersion: 2
-        x: 3589
-        y: 375
-        width: 115
-        height: 60
+        x: 3315
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -666,12 +666,12 @@ TextureImporter:
       name: Chuck-package-goodlaunch_20
       rect:
         serializedVersion: 2
-        x: 3910
-        y: 405
-        width: 19
-        height: 16
+        x: 3978
+        y: 0
+        width: 663
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -684,473 +684,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_21
-      rect:
-        serializedVersion: 2
-        x: 4256
-        y: 375
-        width: 111
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a29a5dd5dcc322c0800000000000000
-      internalID: -4457493987252858207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_22
-      rect:
-        serializedVersion: 2
-        x: 4574
-        y: 404
-        width: 20
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba07a269242850030800000000000000
-      internalID: 3460315111202910379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_23
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 125
-        width: 53
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 037b29afdbb05eba0800000000000000
-      internalID: -6060424812976490704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_24
-      rect:
-        serializedVersion: 2
-        x: 1231
-        y: 113
-        width: 82
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c19fd4336af4c1cf0800000000000000
-      internalID: -280261501559899876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_25
-      rect:
-        serializedVersion: 2
-        x: 1885
-        y: 168
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7ce656dd6dd50db0800000000000000
-      internalID: -4826207961840423813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_26
-      rect:
-        serializedVersion: 2
-        x: 1889
-        y: 105
-        width: 94
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0242bf9dda20142e0800000000000000
-      internalID: -2143429001941933024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_27
-      rect:
-        serializedVersion: 2
-        x: 2540
-        y: 162
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91522771973946450800000000000000
-      internalID: 6081147545150694681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_28
-      rect:
-        serializedVersion: 2
-        x: 2573
-        y: 124
-        width: 47
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f00ae28398e01b9d0800000000000000
-      internalID: -2760409114085515249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_29
-      rect:
-        serializedVersion: 2
-        x: 2645
-        y: 167
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 949d612f1f4c5cde0800000000000000
-      internalID: -1313427172880885431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_30
-      rect:
-        serializedVersion: 2
-        x: 3202
-        y: 103
-        width: 113
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d206a0a7b0afdcc30800000000000000
-      internalID: 4381432939700445229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_31
-      rect:
-        serializedVersion: 2
-        x: 286
-        y: 105
-        width: 103
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ddff9cd30fd37580800000000000000
-      internalID: -8830469236664042027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_32
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 105
-        width: 115
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2cb71c21a5dd765c0800000000000000
-      internalID: -4222162746705085502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_33
-      rect:
-        serializedVersion: 2
-        x: 1604
-        y: 105
-        width: 111
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f99c05bd1eceb7060800000000000000
-      internalID: 6952410904567794079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_34
-      rect:
-        serializedVersion: 2
-        x: 2275
-        y: 105
-        width: 103
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be213d7d782381b40800000000000000
-      internalID: 5411130511308559083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_35
-      rect:
-        serializedVersion: 2
-        x: 2926
-        y: 105
-        width: 115
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4746951a35e86420800000000000000
-      internalID: 2623598820576347983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_36
-      rect:
-        serializedVersion: 2
-        x: 3593
-        y: 105
-        width: 111
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5edbdf2eefd87b480800000000000000
-      internalID: -8883475614095524379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_37
-      rect:
-        serializedVersion: 2
-        x: 3920
-        y: 145
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0ccc8cbceb3d1d10800000000000000
-      internalID: 2097898889386183693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_38
-      rect:
-        serializedVersion: 2
-        x: 4264
-        y: 105
-        width: 327
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25295499ba52cc170800000000000000
-      internalID: 8199970440475939410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_39
-      rect:
-        serializedVersion: 2
-        x: 1230
-        y: 120
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6dc6dd09c432f7010800000000000000
-      internalID: 1188707638404017366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_40
-      rect:
-        serializedVersion: 2
-        x: 2548
-        y: 103
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c43e00584fe6f750800000000000000
-      internalID: 6338516619430343872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chuck-package-goodlaunch_41
-      rect:
-        serializedVersion: 2
-        x: 2636
-        y: 104
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 128d49b882146ff40800000000000000
-      internalID: 5761864415663413281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 020d93e49f3c04e5c8605799c07a234e
     internalID: 0
     vertices: []
     indices: 
@@ -1158,7 +696,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":663.0,"y":270.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Chuck-package-goodlaunch_0: -2950059807981646031
       Chuck-package-goodlaunch_1: -4976995953451017520
@@ -1174,29 +714,8 @@ TextureImporter:
       Chuck-package-goodlaunch_19: 4574900595335245999
       Chuck-package-goodlaunch_2: 4983912873110171997
       Chuck-package-goodlaunch_20: -8334707883004681041
-      Chuck-package-goodlaunch_21: -4457493987252858207
-      Chuck-package-goodlaunch_22: 3460315111202910379
-      Chuck-package-goodlaunch_23: -6060424812976490704
-      Chuck-package-goodlaunch_24: -280261501559899876
-      Chuck-package-goodlaunch_25: -4826207961840423813
-      Chuck-package-goodlaunch_26: -2143429001941933024
-      Chuck-package-goodlaunch_27: 6081147545150694681
-      Chuck-package-goodlaunch_28: -2760409114085515249
-      Chuck-package-goodlaunch_29: -1313427172880885431
       Chuck-package-goodlaunch_3: 5030668555572815117
-      Chuck-package-goodlaunch_30: 4381432939700445229
-      Chuck-package-goodlaunch_31: -8830469236664042027
-      Chuck-package-goodlaunch_32: -4222162746705085502
-      Chuck-package-goodlaunch_33: 6952410904567794079
-      Chuck-package-goodlaunch_34: 5411130511308559083
-      Chuck-package-goodlaunch_35: 2623598820576347983
-      Chuck-package-goodlaunch_36: -8883475614095524379
-      Chuck-package-goodlaunch_37: 2097898889386183693
-      Chuck-package-goodlaunch_38: 8199970440475939410
-      Chuck-package-goodlaunch_39: 1188707638404017366
       Chuck-package-goodlaunch_4: -3875052078736576325
-      Chuck-package-goodlaunch_40: 6338516619430343872
-      Chuck-package-goodlaunch_41: 5761864415663413281
       Chuck-package-goodlaunch_5: 8505002168779612678
       Chuck-package-goodlaunch_6: -298087457247823332
       Chuck-package-goodlaunch_7: -1203386669285499730

@@ -8,16 +8,13 @@ public class UI : MonoBehaviour
     public CanvasGroup GameOverCanvasGroup;
   
     public SpriteRenderer HealthSpriteRenderer;
-  
-    public Sprite EmptyHealthSprite;
-    public Sprite OneHealthSprite;
-    public Sprite TwoHealthSprite;
-    public Sprite ThreeHealthSprite;
+    
     
     public void StartGame()
     {
         CanvasGroupDisplayer.Hide(StartScreenCanvasGroup);
         CanvasGroupDisplayer.Hide(GameOverCanvasGroup);
+        
     }
 
 
@@ -32,24 +29,5 @@ public class UI : MonoBehaviour
         CanvasGroupDisplayer.Show(StartScreenCanvasGroup);
         CanvasGroupDisplayer.Hide(GameOverCanvasGroup);
     }
-
-
-    public void UpdateHealthDisplay()
-    {
-        switch (HealthDisplay.Health)
-        {
-            case 3f:
-                HealthSpriteRenderer.sprite = ThreeHealthSprite;
-                break;
-            case 2f:
-                HealthSpriteRenderer.sprite = TwoHealthSprite;
-                break;
-            case 1f:
-                HealthSpriteRenderer.sprite = OneHealthSprite;
-                break;
-            default:
-                HealthSpriteRenderer.sprite = EmptyHealthSprite;
-                break;
-        }
-    }
+    
 }

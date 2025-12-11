@@ -2,57 +2,70 @@ using UnityEngine;
 
 public class ChuckAnimator : MonoBehaviour
 {
-    public Animator Animator;
+    Animator Anim;
     public SpriteRenderer SpriteRenderer;
-    public KeyboardInput KeyboardInput;
-    
+    public KeyboardInput KeyboardInput; 
     public Chuck Chuck;
+
+    public string isParryingName;
+    public bool isParryingValue;
+    
+    public string isPulsingName;
+    public bool isPulsingValue;
+
+    public string isBoostingName;
+    public bool isBoostingValue;
+    
     
     // This class will manage Chuck's Animations
 
-    private void InitializeComponents()
+    void Start()
     {
         if (SpriteRenderer == null)
             SpriteRenderer = GetComponent<SpriteRenderer>();
 
-        if (Animator == null)
-            Animator = GetComponent<Animator>();
+        if (Anim == null)
+            Anim = GetComponent<Animator>();
 
         if (KeyboardInput == null)
             KeyboardInput = GetComponent<KeyboardInput>();
     }
-    
-    private void UpdateAnimator()
+
+    public void NormalAnim()
     {
-        if (Animator == null)
-            return;
-        // check if chuck is parrying, boosting, pulsing, or shooting the package
-            // if none are true/active, default to basic idle animation
-        
+        StopParryingAnim();
+        StopBoostingAnim();
+        StopPulsingAnim();
     }
     
     public void StartParryingAnim()
     {
+        Anim.SetBool(isParryingName, true);
     }
 
     public void StopParryingAnim()
     {
+        Anim.SetBool(isParryingName, false);
     }
 
     public void StartBoostingAnim()
     {
+        Anim.SetBool(isBoostingName, true);
     }
 
     public void StopBoostingAnim()
     {
+        Anim.SetBool(isBoostingName, false);
     }
 
     public void StartPulsingAnim()
     {
+        Anim.SetBool(isPulsingName, true);
     }
 
     public void StopPulsingAnim()
     {
+        Anim.SetBool(isPulsingName, false);
     }
     
     

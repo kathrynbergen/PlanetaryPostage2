@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1213700874936044753}
   - component: {fileID: 779465086946773298}
+  - component: {fileID: -4300849560731730027}
   - component: {fileID: 1569605299390549975}
-  - component: {fileID: 1463301489774114799}
+  - component: {fileID: 2745450578699602733}
   m_Layer: 0
   m_Name: AlienBasic
   m_TagString: Obstacle
@@ -92,6 +93,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4300849560731730027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93497228326777471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9876dbb88608345598b1f3be5555b2bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBasic
+  ObstaclePrefab: {fileID: 93497228326777471}
+  BulletPrefab: {fileID: 2526614731955205239, guid: 1a59b7a48fcd340cc85fc6437c8819c5, type: 3}
+  Bullet: {fileID: -7380665801481167634, guid: 1a59b7a48fcd340cc85fc6437c8819c5, type: 3}
 --- !u!61 &1569605299390549975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,18 +154,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.023412, y: 1.745088}
   m_EdgeRadius: 0
---- !u!114 &1463301489774114799
-MonoBehaviour:
+--- !u!95 &2745450578699602733
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93497228326777471}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9876dbb88608345598b1f3be5555b2bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AlienBasic
-  ObstaclePrefab: {fileID: 93497228326777471}
-  BulletPrefab: {fileID: 2526614731955205239, guid: 1a59b7a48fcd340cc85fc6437c8819c5, type: 3}
-  Bullet: {fileID: -7380665801481167634, guid: 1a59b7a48fcd340cc85fc6437c8819c5, type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbd23931a7165433b988fb17c2a71117, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

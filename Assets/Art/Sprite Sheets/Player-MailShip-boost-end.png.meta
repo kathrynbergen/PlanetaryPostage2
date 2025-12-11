@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 68ed14d52f8d64c09a8ec0d0f2b01d76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5880204653688578008
+    second: Player-MailShip-boost-start_0
+  - first:
+      213: 7755336028090894608
+    second: Player-MailShip-boost-start_1
+  - first:
+      213: 5337069738830008008
+    second: Player-MailShip-boost-start_2
+  - first:
+      213: -4124698264817389280
+    second: Player-MailShip-boost-start_3
+  - first:
+      213: 8100820950083107046
+    second: Player-MailShip-boost-start_4
+  - first:
+      213: -462973365826463668
+    second: Player-MailShip-boost-start_5
+  - first:
+      213: -6055930825269457521
+    second: Player-MailShip-boost-start_6
+  - first:
+      213: -5854093671796713717
+    second: Player-MailShip-boost-start_7
+  - first:
+      213: -4127687576288885217
+    second: Player-MailShip-boost-start_8
+  - first:
+      213: 5501523786343465139
+    second: Player-MailShip-boost-start_9
+  - first:
+      213: -2050777414471402962
+    second: Player-MailShip-boost-start_10
+  - first:
+      213: -1688596741772297021
+    second: Player-MailShip-boost-start_11
+  - first:
+      213: 970367457531782363
+    second: Player-MailShip-boost-start_12
+  - first:
+      213: -8675333391562443361
+    second: Player-MailShip-boost-start_13
+  - first:
+      213: -5487828412716942221
+    second: Player-MailShip-boost-start_14
+  - first:
+      213: -2505758494079465680
+    second: Player-MailShip-boost-start_15
+  - first:
+      213: 2673324474543285931
+    second: Player-MailShip-boost-start_16
+  - first:
+      213: 8118522731312206413
+    second: Player-MailShip-boost-start_17
+  - first:
+      213: 5236367799843432597
+    second: Player-MailShip-boost-start_18
+  - first:
+      213: 8219925179317891371
+    second: Player-MailShip-boost-start_19
+  - first:
+      213: 5929557227008395597
+    second: Player-MailShip-boost-start_20
+  - first:
+      213: -2081546546628845027
+    second: Player-MailShip-boost-start_21
+  - first:
+      213: 6394499921042091453
+    second: Player-MailShip-boost-start_22
+  - first:
+      213: 7187771014763048651
+    second: Player-MailShip-boost-start_23
+  - first:
+      213: -2338611723992971996
+    second: Player-MailShip-boost-start_24
+  - first:
+      213: -3253750225953962802
+    second: Player-MailShip-boost-start_25
+  - first:
+      213: 1396643929942774965
+    second: Player-MailShip-boost-start_26
+  - first:
+      213: 4701700802618859289
+    second: Player-MailShip-boost-start_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player-MailShip-boost-start_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfd4b55afeaa9150800000000000000
+      internalID: 5880204653688578008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-boost-start_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019852c270d70ab60800000000000000
+      internalID: 7755336028090894608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-boost-start_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce037486a4111a40800000000000000
+      internalID: 5337069738830008008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-boost-start_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021b3ef18c022c6c0800000000000000
+      internalID: -4124698264817389280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-MailShip-boost-start_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8febeebb5eb6070800000000000000
+      internalID: 8100820950083107046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6f8ed2a1197694234abfb3d88907a54d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":195.0,"y":168.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Player-MailShip-boost-start_0: 5880204653688578008
+      Player-MailShip-boost-start_1: 7755336028090894608
+      Player-MailShip-boost-start_2: 5337069738830008008
+      Player-MailShip-boost-start_3: -4124698264817389280
+      Player-MailShip-boost-start_4: 8100820950083107046
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
