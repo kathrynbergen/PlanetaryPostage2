@@ -10,7 +10,7 @@ public class UI_ProgressBar : MonoBehaviour
     {
         if (canMove)
         {
-            ChuckIcon.MoveOnBar();
+            //ChuckIcon.MoveOnBar();
         }
     }
     

@@ -13,10 +13,14 @@ public class HealthDisplay : MonoBehaviour
     public Sprite ThreeHealthSprite;
     
     public SpriteRenderer HealthSpriteRenderer;
-    
+
+    public float getHealth()
+    {
+        return Health;
+    }
     public void UpdateHealthDisplay()
     {
-        switch (GameParameters.ChuckHealth)
+        switch (Health)
         {
             case 3f:
                 HealthSpriteRenderer.sprite = ThreeHealthSprite;

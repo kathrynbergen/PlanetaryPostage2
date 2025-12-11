@@ -5,7 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
    public UI UI;
-   public UI_ProgressBar ProgressBar;
+   public ProgressBarIcon ProgressBarIcon;
    public HealthDisplay HealthDisplay;
    public AsteroidPlacer AsteroidPlacer;
    public AlienBasicPlacer AlienBasicPlacer;
@@ -51,7 +51,7 @@ public class Game : MonoBehaviour
 
    public void GameOver()
    {
-       ProgressBar.StopMovement();
+       ProgressBarIcon.StopMovement();
        DisablePlayerMovement();
        DisableObstacles();
        UI.GameOver();
@@ -84,7 +84,8 @@ public class Game : MonoBehaviour
        UpdateSpawnRates();
        EnableObstacles();
        EnablePlayerMovement();
-       ProgressBar.StartMovement();
+       ProgressBarIcon.StartMovement();
+       ProgressBarIcon.Move();
        
        // reset all values to initial
        ResetHealth();
@@ -95,7 +96,7 @@ public class Game : MonoBehaviour
    private void ResetHealth()
    {
        HealthDisplay.Health = 3f;
-       UI.ShowHealth();
+       UI.UpdateHealthDisplay();
    }
    private void EnablePlayerMovement()
    {

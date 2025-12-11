@@ -57,7 +57,7 @@ public class Chuck : MonoBehaviour
    //UNFINISHED
    public void Shoot()
    {
-       //StartCoroutine(MoveToLaunchPos());
+       isShooting = true;
    }
 
    IEnumerator MoveToLaunchPos()
@@ -214,8 +214,11 @@ public class Chuck : MonoBehaviour
            }
            else
            {
-               TakeDamage();
-               HP.DecreaseHealth();
+               if (!isShooting)
+               {
+                   TakeDamage();
+                   HP.DecreaseHealth();
+               }
            }
        }
        
