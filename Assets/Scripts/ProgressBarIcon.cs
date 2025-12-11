@@ -6,8 +6,8 @@ public class ProgressBarIcon : MonoBehaviour
 {
     public SpriteRenderer PBISpriteRenderer;
     public Sprite NormalSprite;
-    private QuickTimeEvent QTE;
-    private HealthDisplay HealthDisplay;
+    public QuickTimeEvent QTE;
+    public HealthDisplay HealthDisplay;
 
     public int planetsVisited;
     public float startPosition = 0.75f;  
@@ -42,7 +42,7 @@ public class ProgressBarIcon : MonoBehaviour
         {
             if (HealthDisplay.getHealth() == 0)
             {
-                timeOnBar = 30f;
+                yield break;
             }
             float t = timeOnBar/travelTime;
             float xPos = Mathf.Lerp(startPosition, endPosition, t);
@@ -51,7 +51,8 @@ public class ProgressBarIcon : MonoBehaviour
             timeOnBar += Time.deltaTime;
             yield return null;
         }
-        
-        QTE.StartQTE(planetsVisited);
+
+        Debug.Log("Planet Reached!");
+        QTE.StartQTE();
     }
 }

@@ -4,17 +4,18 @@ using UnityEngine;
 public class KeyboardInput : MonoBehaviour
 {
    public Chuck Chuck;
+   
    //CHANGE TO GAMEPARAMETERS.DOUBLEPRESSTIME
    //Could be changed with an accessibility slider?
    //doublePressThreshold (normal) = 0.15f
    //doublePressThreshold (generous) = 0.25f
+   public QuickTimeEvent QTE;
    private float doublePressThreshold = 0.15f;
-
-
    private bool canSuccessfullyUpPulse;
    private bool canSuccessfullyDownPulse;
    private float upPulseTimer;
    private float downPulseTimer;
+   private int spacePresses = 0;
   
    void Update()
    {
@@ -77,11 +78,15 @@ public class KeyboardInput : MonoBehaviour
        {
            Chuck.MoveManually(new Vector2(0, -1));
        }
-      
-      
+       
        //Parry
        if (Input.GetKeyDown(KeyCode.Space))
        {
+           if (QTE.IsInQTE)
+           {
+               QTE.SpacePress();
+               return;
+           }
            Chuck.Parry();
        }
       
