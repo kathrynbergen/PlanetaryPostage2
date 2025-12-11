@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
    public UI UI;
+   public UI_Boosting UI_Boosting;
    public QuickTimeEvent QTE;
    public ProgressBarIcon ProgressBar;
    public HealthDisplay HealthDisplay;
@@ -113,6 +114,7 @@ public class Game : MonoBehaviour
        
        // reset all values to initial
        ResetHealth();
+       UI_Boosting.ResetBoost();
        // reset score to 0
    }
 
@@ -145,7 +147,7 @@ public class Game : MonoBehaviour
 
    private void AdjustDifficultyToLevelOne()
    {
-       UpdateGameParameters(2f, 4f, 2f, 6f, 3f, 6f);
+       UpdateGameParameters(3f, 5f, 3f, 7f, 4f, 7f);
    }
    private void AdjustDifficultyToLevelTwo()
    {

@@ -62,8 +62,7 @@ public class ObstacleObjectPlacer : MonoBehaviour
                 yield break;
             }
         }
-
-        print("All Y positions blocked — delaying placement");
+        
         yield return new WaitForSeconds(0.1f);
     }
 

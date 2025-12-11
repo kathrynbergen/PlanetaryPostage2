@@ -41,7 +41,6 @@ public class ObstacleObject : MonoBehaviour
     IEnumerator PrepareToShoot()
     {
         canMove = false;
-        print("preparing to shoot");
         yield return new WaitForSeconds(1f);
         Shoot();
         TurnAround();
@@ -55,14 +54,12 @@ public class ObstacleObject : MonoBehaviour
 
     private void Shoot()
     {
-        print("SHOOT!!");
         Instantiate(BulletPrefab, transform.position, Quaternion.identity);
     }
 
     IEnumerator CountdownUntilDestroyedOffScreen()
     {
         yield return new WaitForSeconds(5f / Mathf.Abs(ObstacleSpeed));
-        print("destroy!");
         Destroy(gameObject);
     }
     private void Move(Vector2 direction)

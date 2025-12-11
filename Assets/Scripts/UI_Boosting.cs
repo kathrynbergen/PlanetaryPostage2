@@ -8,12 +8,7 @@ public class UI_Boosting : MonoBehaviour
 
     public int Boost = 0;
 
-    public Sprite EmptyBoostSprite;
-    public Sprite OneBoostSprite;
-    public Sprite TwoBoostSprite;
-    public Sprite ThreeBoostSprite;
-    public Sprite FourBoostSprite;
-    public Sprite FiveBoostSprite;
+    public Sprite[] BoostSprites = new Sprite[6];
     
     public GameObject BoostReadyText;
     public SpriteRenderer BoostSpriteRenderer;
@@ -22,29 +17,15 @@ public class UI_Boosting : MonoBehaviour
     {
         return Boost;
     }
+
+    public void ResetBoost()
+    {
+        Boost = 0;
+        BoostSpriteRenderer.sprite = BoostSprites[Boost];
+    }
     public void UpdateBoostDisplay()
     {
-        switch (Boost)
-        {
-            case 5:
-                BoostSpriteRenderer.sprite = FiveBoostSprite;
-                break;
-            case 4:
-                BoostSpriteRenderer.sprite = FourBoostSprite;
-                break;
-            case 3:
-                BoostSpriteRenderer.sprite = ThreeBoostSprite;
-                break;
-            case 2:
-                BoostSpriteRenderer.sprite = TwoBoostSprite;
-                break;
-            case 1:
-                BoostSpriteRenderer.sprite = OneBoostSprite;
-                break;
-            default:
-                BoostSpriteRenderer.sprite = EmptyBoostSprite;
-                break;
-        }
+        BoostSpriteRenderer.sprite = BoostSprites[Boost];
     }
 
     public void IncreaseBoost()

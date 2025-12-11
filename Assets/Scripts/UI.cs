@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class UI : MonoBehaviour
@@ -8,7 +9,8 @@ public class UI : MonoBehaviour
     public CanvasGroup GameOverCanvasGroup;
   
     public SpriteRenderer HealthSpriteRenderer;
-    
+
+    public Text ScoreText;
     
     public void StartGame()
     {
@@ -28,6 +30,11 @@ public class UI : MonoBehaviour
     {
         CanvasGroupDisplayer.Show(StartScreenCanvasGroup);
         CanvasGroupDisplayer.Hide(GameOverCanvasGroup);
+    }
+
+    public void SetScoreText()
+    {
+        ScoreText.text = "Score: " + GameParameters.ChuckScore;
     }
     
 }
